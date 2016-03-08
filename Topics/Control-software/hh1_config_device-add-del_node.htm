@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Installing and Removing Devices">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Adding or Removing a Node or Changing a Node ID</title>
+        <meta name="description" content="To add or remove a node or change a node’s ID number, you must use the Node Changer application and the control system’s Node Editor." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="Adding"></a><a name="aanchor226"></a>
+            <MadCap:concept term="hh_config_device-add-del" />Adding or Removing a Node or Changing a Node ID</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device-add-del" href="javascript:void(0);" data-mc-topics="About Installing and Removing Devices|hh1_config_device-add-del_overview.htm#aanchor219||Adding or Removing a Node or Changing a Node ID|#aanchor226||Core Preconfigured Devices|hh1_config_device-add-del_core-device.htm#aanchor220||Installing a Custom Device|hh1_config_device-add-del_add-custom.htm#aanchor223||Installing a Preconfigured Device|hh1_config_device-add-del_add-preconfig.htm#aanchor221||Installing, Moving, and Deleting an Auto-Configuration Device|hh1_config_device-add-del_auto-config-ethrnt.htm#aanchor222||Maximum Device Limit (for Installing Devices)|hh1_config_device-add-del_max-limit.htm#aanchor224||Removing a Device|hh1_config_device-add-del_del.htm#aanchor225"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about installing and removing devices.</p>
+        <p>Adding or removing a node or changing a node’s ID number is a two-step process:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You must use the Node Changer application (supplied in <span class="VariablesSupportFiles">Support Files</span>\4 - Test Software\) to configure the node’s electronics. This operation is done outside of the ROV control system, and is described in <a href="../ROV Service/02045_hammerhead_ 4.2.htm" class="NoPageNumber MCXref xref xrefNoPageNumber"><i>Subsea Node: Configure ID Number, RSTP and VLAN Status</i></a>.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●"> You must then use the ROV control system’s Node Editor (described below) to tell the control system about the changes made in Node Changer.</td>
+            </tr>
+        </table>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>If the changes that you make in the Node Editor do not exactly match the changes made in Node Changer, equipment will malfunction.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>You cannot operate any part of the ROV system while you are using the Node Editor. After you have made changes and exited from the Node Editor, the control system automatically restarts.</p>
+        <p>The NODE&#160;EDITOR panel provides information to the control system about changes that you made to nodes or node ID numbers in the Node Changer application. For information about displaying the NODE&#160;EDITOR panel, see individual instructions below for adding or removing a node or for changing a node ID number.</p>
+        <p>The illustration below shows an example of a NODE&#160;EDITOR panel for removing a node or changing its ID number.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_device_edit-nodes_node-editor_672x321.png" style="width: 672;height: 321;" />
+        </p>
+        <p>For both an added node or an existing node, the NODE&#160;PARAMETERS panel lets you select a node ID number, label the node, and select the platform (ROV, TMS, topside, etc.) on which the node is located.  For information about displaying the NODE&#160;PARAMETERS panel, see individual instructions below for adding a  node or for changing the node ID number.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_device_edit-nodes_node-parameters_384x337.png" class="width_4" style="width: 384;height: 337;" />
+        </p>
+        <h2><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="Adding a Node"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Adding a Node</a>
+        </h2>
+        <div style="display: none;" data-mc-target-name="Adding a Node">
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICE tab at the top of the screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap EDIT&#160;NODE on the  lower left side.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">When the NODE&#160;EDITOR panel displays, tap ADD&#160;NODE.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">When the NODE&#160;PARAMETERS panel displays, select the node number, label the node, and select the platform. Then tap OK.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">In the NODE&#160;EDITOR panel, tap COMMIT&#160;CHANGES. The control system automatically restarts.</td>
+                </tr>
+            </table>
+        </div>
+        <h2><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="Removing a Node"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Removing a Node</a>
+        </h2>
+        <div style="display: none;" data-mc-target-name="Removing a Node">
+            <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>You cannot remove a node that contains a core preconfigured device.</p>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICE tab at the top of the screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap EDIT&#160;NODE on the screen's lower left side.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">When the NODE&#160;EDITOR panel displays, tap the button for the node that you are removing.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Tap REMOVE&#160;NODE.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Tap COMMIT&#160;CHANGES, and the control system automatically restarts.</td>
+                </tr>
+            </table>
+        </div>
+        <h2><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="Changing a Node ID Number"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Changing a Node ID Number</a>
+        </h2>
+        <div style="display: none;" data-mc-target-name="Changing a Node ID Number">
+            <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Remember that you must use the Node Changer application (supplied in <span class="VariablesSupportFiles">Support Files</span>\4 - Test Software\) to configure the node’s electronics. This operation is done outside of the ROV control system, and is described in <a href="../ROV Service/02045_hammerhead_ 4.2.htm" class="NoPageNumber MCXref xref xrefNoPageNumber"><i>Subsea Node: Configure ID Number, RSTP and VLAN Status</i></a>. You can than change the node’s ID number in the ROV control system as described below.</p>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICE tab at the top of the screen.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap EDIT&#160;NODE on the  lower left side.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">When the NODE&#160;EDITOR panel displays, tap RENUMBER NODE.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">When the NODE&#160;PARAMETERS panel displays, select a node number from the drop-down list and enter a node label. Then tap OK.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 0px;" />
+                <col style="width: 24px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">In the NODE&#160;EDITOR panel, tap COMMIT&#160;CHANGES. The control system automatically restarts.</td>
+                </tr>
+            </table>
+        </div>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device-add-del_node.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

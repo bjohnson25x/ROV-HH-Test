@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Installing and Configuring TAVS Video Devices">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>TAVS Subsea Camera Installation and Configuration</title>
+        <meta name="description" content="This section provides detailed instructions for installing and configuring a TAVS subsea camera." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor343"></a>
+            <MadCap:concept term="hh_flight_video_tavs" />TAVS Subsea Camera Installation and Configuration</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_video_tavs" href="javascript:void(0);" data-mc-topics="About ROV Video Systems|hh1_flight_video_overview.htm#aanchor120||About the Control Console Monitors|hh1_controls_mon-wall_overview.htm#aanchor20||Camera Configuration Properties|hh1_config_device_prop-vid_cam-gen.htm#aanchor258||Configuring the Switcher for TAVS Video|hh1_config_video-tavs-switcher.htm#aanchor342||Flight Screen Video  Panel|hh1_flight_video_panel.htm#aanchor125||Hardware and Data Routing for TAVS Video|hh1_flight_video_tavs-hardware.htm#aanchor122||TAVS Subsea Camera Installation and Configuration|#aanchor343||TAVS Topside Video Input Device Installation and Configuration|hh1_config_video-tavs_topside-vid-input-device.htm#aanchor344||TAVS Topside Video Output Device Installation and Configuration|hh1_config_video-tavs_topside-vid-output-device.htm#aanchor345||Video Subsystem Diagnostics Display|hh1_diag_rov_video_subsys_overview.htm#aanchor405"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about video functions and devices for TAVS.</p>
+        <p>This information applies only to ROV systems that have <span class="VariablesSD video system (legacy)">TAVS</span> rather than <span class="VariablesHDEVS">HDEVS</span>.</p>
+        <p>General steps for installing and configuring a subsea camera are:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Connect the camera’s cable to a subsea node port.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">You will be tunneling the camera’s signals from the subsea node port to a rack node VIM port. Decide which rack node VIM port to use. If that rack node port is not already connected to a video switcher input port, connect a cable between the rack node port and the desired video switcher input port.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Using the control system software, install the camera in the control system by specifying the camera’s subsea node port and the rack node port (described in step 2) that will be used to tunnel the video signals.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Configure the device in the control system (for example, specify serial communication parameters for zoom and focus signals).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">On the VIDEO&#160;SWITCH screen, confirm that the video input port is configured as the desired node port.</td>
+            </tr>
+        </table>
+        <p>Detailed information about these steps is provided in sections that follow.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>In descriptions of TAVS signal routing, <b>video signals are described as inputs or outputs from the viewpoint of the video switcher</b>. For example, the output from a camera is described as an input because the signals are input to the video switcher.</p>
+        <h2>Connecting a Camera to a Subsea Node</h2>
+        <p>This installation procedure applies to any composite video camera (NTSC or PAL, fixed or with zoom and focus features).</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>Before you begin the installation, note the camera’s specifications, which are available from either the manufacturer’s manual or the camera’s serialization plate. You will need to know:</p>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Camera manufacturer and model</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Video format (NTSC or PAL)</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Features (like zoom and focus)</td>
+                    </tr>
+                </table>
+                <p>To connect a camera to a subsea node:</p>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Attach the camera connector to a video interface module (VIM) on a subsea node.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Record the subsea node number and port number for the connected camera. You will need this information when you add the camera to the control system.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2>Connecting Subsea Camera Signals to the Video Switcher</h2>
+        <p>You will later be tunneling the camera’s signals from the subsea node port to a rack node VIM port. Decide which rack node VIM port to use. </p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>Typically, a rack node has several extra VIM ports waiting to be attached to added subsea cameras. Each extra rack node VIM port is typically already connected with a cable to a video switcher input port.</p>
+                <p> If the rack node VIM port that you want to use is already connected to a video switcher input port, you do not need to attach additional cables. If not, you must connect the rack node VIM port to a video switcher input port.</p>
+            </div>
+        </div>
+        <h2>Adding/Configuring a Subsea Camera in the Control System</h2>
+        <p>You must add the camera to the control system and then configure the camera’s properties.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION screen.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICE tab at the top of the screen.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap INSTALL DEVICE.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">When the INSTALL DEVICE panel displays, tap the VIDEO tab.</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_config_device_install-new_camera_tavs_672x419.png" alt="" title="" style="width: 672;height: 419;" />
+                </p>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">In the list of preconfigured cameras, tap the button for the camera that you are adding. (If the camera is not on the list of preconfigured devices, see the manual section on installing a custom device.)</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Tap NEXT STEP.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">7.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="7.">Select the subsea node port to which you attached the camera. The interface module for the port must be a VIM.</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_config_camera_sel-subs-node-port_672x395.png" alt="" title="" style="width: 672;height: 395;" />
+                </p>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">8.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="8.">Tap NEXT&#160;STEP, and the screen changes to let you select a client VIM&#160;(a video tunnel from the subsea node to a rack node) and a video format.</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_config_camera_add-client-vim_384x198.png" class="width_4" style="width: 384;height: 198;" />
+                </p>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">9.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="9.">Tap the drop-down list for ADD&#160;VIDEO&#160;TUNNELS and select the desired rack node VIM from the list of available ports. Ports that have already been assigned to other functions are not displayed in this list.</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_config_camera_add-client-vim2_672x332.png" style="width: 672;height: 332;" />
+                </p>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">10.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="10."> Tap the drop-down box for SELECT&#160;VIDEO&#160;FORMAT and select a format.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">11.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="11.">Tap NEXT&#160;STEP.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">12.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="12.">When the screen asks you to confirm the update to the control system configuration (the addition of the camera), tap INSTALL.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">13.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="13.">Follow instructions in the technical manual to configure the camera (camera properties, serial properties, and power properties).</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2>Configuring the Video Switcher for a Subsea Camera</h2>
+        <p>Once the camera is installed and configured in the control system, you must configure the video switcher.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>You can access the configuration for the video switcher from any CONFIGURATION screen by tapping the VIDEO SWITCH tab near the screen top.</p>
+                <p>If a cable was already connected between the camera’s rack node VIM port and a video switcher input port, the video switcher has probably already been configured to associate the rack node port and the video switcher input port. Check the VIDEO&#160;SWITCH screen to confirm that the added subsea camera shows on the screen for the correct switcher input port.</p>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_config_camera_switcher_672x473.png" style="width: 672;height: 473;" />
+                </p>
+                <p>If you had to connect a cable between the camera’s rack node port and a video switcher input port, you will probably need to configure the video switcher to associate the rack node port and the video switcher input port. On the VIDEO&#160;SWITCH screen, tap the drop-down list for the video switcher input port that is connected to the rack node port, and select the correct subsea camera.</p>
+            </div>
+        </div>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_video-tavs_subsea-camera.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

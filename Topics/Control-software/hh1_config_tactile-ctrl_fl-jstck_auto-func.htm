@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Configuring Tactile Controls|Configuring the Flight Joystick">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Assigning Auto Function On/Off on the Flight Joystick</title>
+        <meta name="description" content="On the flight joystick, you can assign a button for on/off control for STATIONKEEP, AUTO ALTITUDE, AUTO DEPTH, or AUTO HEADING." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor293"></a>
+            <MadCap:concept term="hh_config_tactile-ctrl_fl-jstick" /><a name="aanchor294"></a>
+            <MadCap:concept term="hh_flight_auto-func_general" />Assigning Auto Function On/Off on the Flight Joystick</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_tactile-ctrl_fl-jstick" href="javascript:void(0);" data-mc-topics="About Configuring Tactile Controls|hh1_config_tactile-ctrl_overview.htm#aanchor281||About Configuring the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_overview.htm#aanchor288||Assigning Auto Function On/Off on the Flight Joystick|#aanchor293||Assigning Pan and Tilt Controls on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_pt-assign.htm#aanchor291||Assigning Video Event Marking to the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_event.htm#aanchor295||Configuring the Deadband Level on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_deadband.htm#aanchor300||Configuring Vertical Thrust Control on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_vert-thrust.htm#aanchor298||Scaling Low-Speed Thrust on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_low-sp-thrust.htm#aanchor299||Setting Control Device Neutral (Zero) Position|hh1_config_tactile-ctrl_zero-position.htm#aanchor285"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about configuring flight joystick controls.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_tactile-ctrl_gen" href="javascript:void(0);" data-mc-topics="About Configuring Tactile Controls|hh1_config_tactile-ctrl_overview.htm#aanchor283||About Configuring the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_overview.htm#aanchor289||Adjusting the Joystick Trigger for Tether Control|hh1_config_tactile-ctrl_tether-ctrl_trigger.htm#aanchor304||Assigning Tether Control Devices|hh1_config_tactile-ctrl_tether-ctrl_assign.htm#aanchor302||Diagnosing a Tactile Control Problem|hh1_diag_topside_console_tactile-ctrls.htm#aanchor423||Setting Control Device Neutral (Zero) Position|hh1_config_tactile-ctrl_zero-position.htm#aanchor287"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to general information about configuring tactile controls.</p>
+        <p>On the flight joystick, you can assign a button for on/off control for STATIONKEEP, AUTO ALTITUDE, AUTO DEPTH, or AUTO HEADING. (The same button can also be configured to trigger event markers for unplanned events in recorded video.)</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>This setting is retained in the user profile for the selected control station.</p>
+        <p>To configure which auto function is controlled by the button:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION  screen.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2."> Tap the TACTILE CONTROLS tab, and then tap the JOYSTICK CONTROL tab.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Use the top-right button to select the desired control station (LEFT&#160;CLIENT COMPUTER or RIGHT CLIENT COMPUTER).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Use the BUTTON FUNCTION&#160;drop-down list to select an auto function for the button.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_tactile-controls_flight-joystick_auto-func_672x192.png" style="width: 672;height: 192;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_tactile-ctrl_fl-jstck_auto-func.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

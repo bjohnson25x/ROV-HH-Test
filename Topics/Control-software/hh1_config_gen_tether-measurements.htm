@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Configuring General System Parameters|Configuring TMS Tether Settings">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Setting Tether Measurements (Using Length or Wraps)</title>
+        <meta name="description" content="For the TMS to operate correctly, you must tell the control system how long the tether is and how much you want to leave on the drum." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor328"></a>
+            <MadCap:concept term="hh_config_gen_tether" />Setting Tether Measurements (Using Length or Wraps)</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_gen_tether" href="javascript:void(0);" data-mc-topics="About Configuring TMS Tether Settings|hh1_config_gen_tether-overview.htm#aanchor326||Adjusting Tether Render Force|hh1_config_gen_tether-render-force.htm#aanchor331||Adjusting TMS Low-Altitude Threshold|hh1_config_gen_tether-low-altitude.htm#aanchor330||Changing the Minimum Tether to be Left on Drum|hh1_config_gen_tether-min-on-drum.htm#aanchor333||Installing, Reterminating, or Shortening Tether|hh1_config_gen_tether-install-reterm.htm#aanchor332||Resetting Tether Length|hh1_config_gen_tether-reset-length.htm#aanchor334||Setting Tether Measurements (Using Length or Wraps)|#aanchor328||Using Tether Slip Detection|hh1_config_gen_tether-slip-detect.htm#aanchor329"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about configuring TMS tether.</p>
+        <p>For the TMS to operate correctly, you must tell the control system how long the tether is and how much you want to leave on the drum.</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Before you change values for TMS tether settings, use the FLIGHT screen TMS CONTROL panel to disable TMS operation. This action disables power to the drum motor, pinch wheel motor, and latches.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Ensure that the user profile for your control station includes supervisor permissions.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">On any CONFIGURATION screen, tap the GENERAL tab.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">On the list on the left side of the screen, tap TMS.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Use the LENGTH/LAYER button on the panel to specify whether you want to view tether values in LENGTH (meters or feet) or LAYERS (number of layers and wraps). A wrap is a partial layer (see <a href="#Counting" class="MCXref xref selected"><i>Counting Layers and Wraps</i></a>). Using the LENGTH/LAYER button, select your preferred method.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/tether_wraps_672x234.jpg" style="width: 672;height: 234;" />
+        </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Enter data for the tether lengths or layers and wraps.</td>
+            </tr>
+        </table>
+        <p>Settings for tether length are:</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_gen_tms_length_144x227.png" class="width_1pt5" style="width: 144;height: 227;" />
+        </p>
+        <p>You cannot enter a value for TETHER LEFT ON DRUM or MINIMUM TETHER ON DRUM that is greater than the value in TOTAL TETHER LENGTH.</p>
+        <p>Settings for tether layers are:</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_gen_tms_layers_288x190.png" class="width_3" style="width: 288;height: 190;" />
+        </p>
+        <h2><a name="Counting"></a>Counting Layers and Wraps</h2>
+        <p>If you are entering values in layers and wraps, be careful to use the correct numbering scheme.</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Layers are always in whole numbers, starting with 1. (There is no layer zero.) A partial layer (where wraps do not go all the way across) is counted as a layer.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Wraps can be fractions of numbers, starting with zero.</td>
+            </tr>
+        </table>
+        <p>For example:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">If a drum has 12 full layers and a partial layer with 18 and a half wraps, you would enter 13 for the layers (12 for the full layers and 1 for the partial layer) and 18.5 for the wraps.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">If a drum has 12 full layers and no partial layer with wraps, you would enter 12 for the layers and 0 for the wraps.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">If a drum has no full layers and a partial layer of 14 and a third wraps, you would enter 1 for the layers (since you have a partial layer) and 14.3 for the wraps.</td>
+            </tr>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_gen_tether-measurements.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Hydraulic Circuit Operation and Control">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Priming an Auxiliary Hydraulic Circuit (UHD-III Only)</title>
+        <meta name="description" content="You can access the PRIME button for a UHD-III auxiliary circuit from the FLIGHT page (expanded HYDRAULIC PRESSURE CONTROL panel) or the DIAGNOSTICS page for the ISOL-8 pump." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor101"></a>
+            <MadCap:concept term="hh_flight_hpu" />Priming an Auxiliary Hydraulic Circuit (UHD-III Only)</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_hpu" href="javascript:void(0);" data-mc-topics="About FLIGHT Screen Hydraulic Circuit Control|hh1_flight_hpu_overview.htm#aanchor96||About the ROV Hydraulics Subsystem Diagnostics Display|hh1_diag_rov_hydraul_subsys_overview.htm#aanchor386||Automatic HPU Motor Shutdown, Power Management, and Pressure Limiting|hh1_flight_hpu_auto-limits.htm#aanchor102||HPU Calibration Requirements|hh1_flight_hpu_calib-requirement.htm#aanchor103||Priming an Auxiliary Hydraulic Circuit (UHD-III Only)|#aanchor101||Setting Hydraulic Circuit Flow (UHD-III  Only)|hh1_flight_hpu_set-flow.htm#aanchor100||Setting Hydraulic Circuit Pressures|hh1_flight_hpu_set-pressure.htm#aanchor99||TMS Hydraulics Subsystem Diagnostics Display (UHD-II Only)|hh1_diag_tms_hydraul_subsys_overview.htm#aanchor412||Turning HPU Power On and Off|hh1_flight_hpu_power-on-off.htm#aanchor98||Viewing and Overriding HPU Shutdown Limits|hh1_flight_hpu_override.htm#aanchor97"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about operating and controlling hydraulic circuits.</p>
+        <p>You must prime the pump for an auxiliary (ISOL-8 pump) circuit if air has been introduced into that circuit. The priming function involves only the cylinders in the circuit being primed.</p>
+        <p> Priming a circuit’s pump can take several minutes, and you cannot prime more than one circuit at a time.</p>
+        <p>For detailed information on filling, bleeding, and priming an auxiliary hydraulic circuit on a UHD-III ROV system, see the appropriate service instruction.</p>
+        <p>You can access the PRIME button for a UHD-III auxiliary circuit from:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The expanded view of the HYDRAULIC PRESSURE CONTROL panel (available on the FLIGHT screen or on any TOOLING screen).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The DIAGNOSTICS screen for the ISOL-8 pump.</td>
+            </tr>
+        </table>
+        <p>You cannot use the priming function for an auxiliary hydraulic circuit if circuit input pressure is greater than 211 bars (3000 psi).</p>
+        <p class="Heading_No_Num">Accessing the Priming Function from the FLIGHT Screen</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the user profile for your control station includes supervisor permissions.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the HPU button.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">When the HYDRAULIC PRESSURE CONTROL panel appears, tap the tab for the auxiliary circuit that you want to prime.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Ensure that circuit input pressure is no greater than 211 bars (3000 psi).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Expand the panel.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Tap PRIME, and slide the lock symbol to the right.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_hpu_prime-in-progress_672x414.png" alt="" title="" style="width: 672;height: 414;" />
+        </p>
+        <p>The percent complete for the priming process appears below the PRIME button.</p>
+        <p class="Heading_No_Num">Accessing the Priming Function from the ISOL-8 Pump DIAGNOSTICS Screen</p>
+        <p>To access the PRIME button from the ISOL-8 pump DIAGNOSTICS screen:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the user profile for your control station includes supervisor permissions.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Ensure that circuit input pressure is no greater than 211 bars (3000 psi).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Display the ISOL-8 pump diagnostics page. (For instructions, see <a href="hh1_diag_subsys-component_device.htm" class="MCXref xref"><i>Diagnostics Information for a Single Device</i></a>.)</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Tap the OPTIONS button for the desired circuit.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_hydr_iso_672x305.png" style="width: 672;height: 305;" />
+        </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">In the OPTIONS panel, tap PRIME and slide the lock symbol to the right.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_hydr_iso_option_144x145.png" class="width_1pt5" style="width: 144;height: 145;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_hpu_isopump-prime.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

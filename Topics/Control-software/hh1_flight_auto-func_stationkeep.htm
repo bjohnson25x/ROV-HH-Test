@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Flight Auto Functions">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/FunctionDescrip_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>STATIONKEEP Auto Function</title>
+        <meta name="description" content="Keeps the ROV at designated starboard/port and fore/aft coordinates. (The ROV can still move up and down, pitch and roll, and change heading.) Mid-Water StationKeep (optional feature) performs the StationKeep function when the ROV is not near the seafloor." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor53"></a>
+            <MadCap:concept term="hh_flight_auto-func_individual" />STATIONKEEP Auto Function</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_auto-func_general" href="javascript:void(0);" data-mc-topics="About Auto Functions|hh1_flight_auto-func_overview.htm#aanchor41||Assigning Auto Function On/Off on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_auto-func.htm#aanchor294||Auto Function List and Descriptions|hh1_flight_auto-func_list-descrip.htm#aanchor42||Auto Function Sensor Dependencies|hh1_flight_auto-func_sensor-dependency.htm#aanchor43||Auto Function Set Points|hh1_flight_auto-func_set-point.htm#aanchor44||Locking Out Joystick Input from Auto Functions|hh1_flight_auto-func_joystk-lockout.htm#aanchor45||Selecting Sensors to Use for Flight Control|hh1_config_gen_flight-ctrl_sensor-select.htm#aanchor324"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to general information about auto functions.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_auto-func_individual" href="javascript:void(0);" data-mc-topics="AUTO ALTITUDE Auto Function|hh1_flight_auto-func_altitude.htm#aanchor46||AUTO&#160;DEPTH Auto Function|hh1_flight_auto-func_depth.htm#aanchor48||AUTO&#160;HEADING Auto Function|hh1_flight_auto-func_heading.htm#aanchor50||AUTO&#160;PITCH/ROLL Auto Function|hh1_flight_auto-func_pitch-roll.htm#aanchor52||BOTTOM&#160;MODE Auto Function|hh1_flight_auto-func_bottom-mode.htm#aanchor56||CRUISE Auto Function|hh1_flight_auto-func_cruise.htm#aanchor47||DISPLACE Auto Function|hh1_flight_auto-func_displace.htm#aanchor49||HIGH SPEED Auto Function|hh1_flight_auto-func_high-speed.htm#aanchor57||MANUAL VELOCITY Auto Function|hh1_flight_auto-func_man-velocity.htm#aanchor59||MEASURE Auto Function|hh1_flight_auto-func_measure.htm#aanchor51||PARK Auto Function|hh1_flight_auto-func_park.htm#aanchor58||REVERSE Auto Function|hh1_flight_auto-func_reverse.htm#aanchor55||STATIONKEEP Auto Function|#aanchor53||TRIMS Auto Function|hh1_flight_auto-func_trims.htm#aanchor54"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about individual auto functions.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_auto-mode_stationkeep_288x316.png" class="width_3" style="width: 288;height: 316;" />
+        </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>STATIONKEEP holds the ROV stationary only for fore/aft and starboard/port movements. To keep the ROV from moving at all, STATIONKEEP, AUTO DEPTH or AUTO ALTITUDE, and AUTO HEADING must all be on.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/FunctionDescrip_Tablestyle.css');margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-FunctionDescrip_Tablestyle" cellspacing="0">
+            <caption>STATIONKEEP Features</caption>
+            <col class="TableStyle-FunctionDescrip_Tablestyle-Column-Column1" />
+            <col class="TableStyle-FunctionDescrip_Tablestyle-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Purpose</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">
+                        <p>Keeps the ROV at designated starboard/port and fore/aft coordinates. (The ROV can still move up and down, pitch and roll, and change heading.)</p>
+                        <p>Mid-Water StationKeep (optional feature) performs the StationKeep function when the ROV is not near the seafloor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Access</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">On the FLIGHT screen, tap STATIONKEEP.</td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Potential issues</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">
+                        <p>The DVL must be within range of the seafloor for StationKeep to work.</p>
+                        <p>If you select LOCK CONTROLS, flight joystick input for fore, aft, starboard, and port movement are locked out. Vertical movement, pitch/roll, and yaw input are still allowed, but pitch and roll must be commanded from the TRIMS function or AUTO PITCH/ROLL.</p>
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>STATIONKEEP holds the ROV stationary only for fore/aft and starboard/port movements. To keep the ROV from moving at all, STATIONKEEP, AUTO DEPTH or AUTO ALTITUDE, and AUTO HEADING must all be on.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Data input</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Compass plus motion reference unit (MRU) or MRU with heading capability.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">DVL.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Turning on/off</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Screen STATIONKEEP button.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Flight control pod button.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Initial set point</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">The ROV’s fore/aft and starboard/port position at the time when you turn on StationKeep.</td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyE-Column1-Body1">Changing the set point</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyD-Column2-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Tap PORT, STBD, FORE, or AFT.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">If the LOCK CONTROLS button is not active, you can use the joystick to move the ROV to a new location, and then release the flight joystick to its neutral position. The ROV’s location at the time when you release the joystick becomes the new set point.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-FunctionDescrip_Tablestyle-Body-Body1">
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyB-Column1-Body1">Function interactions</td>
+                    <td class="TableStyle-FunctionDescrip_Tablestyle-BodyA-Column2-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Not available in BOTTOM MODE.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Not available in PARK mode.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You can change the STATIONKEEP position using the DISPLACE function.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Mid-Water StationKeep</h2>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Mid-Water StationKeep is available only if a license for this feature has been installed on the ROV system (see <a href="hh1_config_gen_licensing.htm" class="MCXref xref"><i>Installing and Viewing Software Feature Licenses</i></a>).</p>
+        <p>Mid-Water StationKeep performs the StationKeep function when the ROV is not near the seafloor. To use Mid-Water StationKeep:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The ROV must be equipped with an inertial navigation instrument along with a DVL that provides input to that instrument. (The inertial navigation instrument and the DVL may be packaged in a single assembly.)</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●"> The ship must be equipped with an ultra-short baseline (USBL) transceiver acoustic positioning system that provides data for Mid-Water StationKeep.</td>
+            </tr>
+        </table>
+        <p>The quality of STATIONKEEP data determines how accurately STATIONKEEP performs. Mid-Water STATIONKEEP is most accurate if the inertial navigation instrument/DVL <i>and</i> USBL are providing input to (aiding) STATIONKEEP, but can also function if only the inertial navigation instrument/DVL or only USBL is aiding the process. Items in the STATIONKEEP panel indicate whether Mid-Water STATIONKEEP is being aided by the inertial navigation instrument/DVL, by USBL, or both.</p>
+        <p>The control system generates a warning if Mid-Water StationKeep becomes unaided by either the inertial navigation instrument/DVL or USBL.</p>
+        <p class="Heading_No_Num">Mid-Water StationKeep Indicators</p>
+        <p>The quality of the data provided to Mid-Water StationKeep is indicated by a screen gauge. When data quality falls below a defined threshold (which you can configure), StationKeep automatically disengages. You cannot engage StationKeep again until the data quality rises above the threshold.</p>
+        <p>You can view Mid-Water StationKeep data indicators in the STATIONKEEP panel.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_auto-mode_stationkeep-mwsk_672x309.png" style="width: 672;height: 309;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_auto-func_stationkeep.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Diagnostics|ROV Diagnostic Details|ROV Flight Subsystem Diagnostics Display">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Direct (Manual) Thruster Control</title>
+        <meta name="description" content="From the ROV flight subsystem diagnostics display, you can select individual thrusters for manual control." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor382"></a>
+            <MadCap:concept term="hh_diag_rov_flight-subsys" />Direct (Manual) Thruster Control</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_diag_rov_flight-subsys" href="javascript:void(0);" data-mc-topics="About the ROV Flight Subsystem Diagnostics Display|hh1_diag_rov_flight_subsys_overview.htm#aanchor379||Automatic Performance Limits: Power and Thruster Limiting|hh1_flight_limits.htm#aanchor36||Direct (Manual) Thruster Control|#aanchor382||Locking Out a Thruster|hh1_diag_rov_flight_subsys_thrstr-lockout.htm#aanchor380||Thruster Control Unit Details|hh1_diag_rov_flight_subsys_tcu.htm#aanchor383||Using Open-Loop  Control|hh1_diag_rov_flight_subsys_thrstr-open-loop.htm#aanchor381"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to diagnostics information for specific devices in the ROV flight subsystem.</p>
+        <p>From the ROV flight subsystem diagnostics display, you can select individual thrusters for manual control.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Use direct control mode only on deck and only for diagnostics purposes.  Do not try to fly the ROV using direct control mode.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_flight_direct-thrust_672x273.png" style="width: 672;height: 273;" />
+        </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>If the speed set point does not approximately match the thruster speed reported by the speed sensor, disable the thruster until you can determine the cause.</p>
+        <p>The figure below shows how to manually control thruster speed and direction.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_flight_direct-thrust_command-speed_672x152.png" style="width: 672;height: 152;" />
+        </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>If a thruster’s rotation is reversed from the expected direction, its installation or connections may be incorrect.</p>
+        <p>Use direct control mode only on deck and only for diagnostics purposes.  Do not try to fly the ROV using direct control mode. To operate thrusters under direct control:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Activate DIRECT CONTROL MODE. This stops all thrusters and automatically cancels all auto functions.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the down arrow next to a thruster  that you want to operate directly. Drag the slider to set the maximum speed and direction.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Set speeds for any additional thrusters that you want to operate directly.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">To turn thrusters on, either:</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Tap ALL ON. This simultaneously turns on all thrusters, but the thrusters that do not have a commanded speed will not run.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Individually tap each thruster that you want to run.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">To stop thruster operation, you can:</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Stop all thrusters by tapping ALL OFF. All thrusters stop, but the commanded set points are unchanged.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Stop a single thruster by tapping its button. The thruster’s commanded set point is unchanged.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>c.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="c.">Set the speed for all thrusters to zero by tapping ZERO ALL. Thrusters that were on remain on, but with a commanded set point of zero.</td>
+            </tr>
+        </table>
+        <p>To return thrusters to automatic control, tap DIRECT CONTROL MODE. (This stops all thrusters.) You must then enable ROV flight with the ROV FLIGHT button.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_diag_rov_flight_subsys_thrstr-manl-ctrl.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

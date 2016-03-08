@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/SI_headertable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/SI_steptable.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Node Compensation: Fill, Bleed, and Drain</title>
+        <meta name="description" content="_" />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="CoverTitle"><a name="aanchor440"></a>
+            <MadCap:concept term="ROV System Subsea Nodes_SI" /><a name="Node_Compensation"></a>HD Node Compensation: Fill, Bleed, and Drain</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="ROV System Subsea Nodes_SI" href="javascript:void(0);" data-mc-topics="Node Compensation: Fill, Bleed, and Drain|#aanchor440||Subsea Node: Configure ID Number, RSTP and VLAN Status|02045_hammerhead_ 4.2.htm#aanchor442||Subsea Node: Remove and Install|01578.htm#aanchor441"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to service instructions related to subsea nodes.</p>
+        <p>This service instruction explains how to fill, bleed, and drain the node compensation circuits, on HD ROVs without rapid fill and drain systems.</p>
+        <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/SI_headertable.css');" class="TableStyle-SI_headertable" cellspacing="0">
+            <col class="TableStyle-SI_headertable-Column-Column1" width="100px" />
+            <col class="TableStyle-SI_headertable-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Tools</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">Compensation cart, compressed air supply</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Personnel</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">1 worker</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Sub-Procedures</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">None</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Parts and Kits</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">None</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Safety</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">General shop conditions</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyB-Column1-Body1" style="font-family: Verdana;">Consumables</td>
+                    <td class="TableStyle-SI_headertable-BodyA-Column2-Body1" style="font-family: Verdana;">Cable ties, compensation fluid</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="bold_break">Filling and Bleeding</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/SI_steptable.css');" class="TableStyle-SI_steptable" cellspacing="0">
+            <col class="TableStyle-SI_steptable-Column-Column1" />
+            <col class="TableStyle-SI_steptable-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the node is oriented so the compensation line (A) enters at the lowest point of the node and the compensation bleed line/relief valve (B) exits at the highest point.</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-SI_steptable-BodyD-Column2-Body1" rowspan="5">
+                        <img src="../../Images/SIs/060000023_336x344.png" class="SI_step" style="width: 336;height: 344;" />
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Connect the compensation cart QD to the node compensation QD (A).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Orient the relief valve (B) above the node so the valve is the highest point in the circuit. Open the relief valve. The valve can be held open by hand or by inserting the tip of a cable tie.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Fill the node by moving the cart selector lever to the FILL position. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Close the relief valve when a steady stream of oil is flowing from the relief valve. Leave the compensation cart connected and in the FILL position.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Do not set the compensation cart pressure above 1 bar (15 psi). Compensation cart charging pressures above 1 bar (15 psi) will force fluid through the relief valves. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Bleed the SeaNet cables:</td>
+                            </tr>
+                        </table>
+                        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Devices compensated by SeaNet cables (such as the rotary actuator) should be filled separately before bleeding the nodes.</p>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Start with the SeaNet cables mounted at the highest elevation. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Open the bleed screw (C) on the SeaNet connector at the node to remove air in the connector. A small amount of air may be trapped here, while the majority of the air will be spread throughout the cable. </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-SI_steptable-BodyD-Column2-Body1" style="text-align: center;">
+                        <img src="../../Images/SIs/060000024_336x389.png" class="SI_step" style="width: 336;height: 389;" />
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>c.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="c.">Disconnect the SeaNet cable at the device end.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>d.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="d.">Press the poppet valve (D) to bleed air from the SeaNet cable. Continue bleeding the cable until there are no air bubbles coming out with the fluid. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>e.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="e.">Reconnect the SeaNet cable to the device.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>f.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="f.">Repeat the process for the remaining SeaNet cables, moving from the highest to lowest. </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-SI_steptable-BodyD-Column2-Body1" style="text-align: center;">
+                        <p class="Figure_Image">
+                            <img src="../../Images/SIs/060000025_336x256.png" class="SI_step" style="width: 336;height: 256;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">7.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="7.">Bleed the 26V power cable:</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Leave the 26V power cable connected to the node and disconnect the power cable at the IPDS.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Elevate the cable to allow air to rise to the disconnected end. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>c.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="c.">Depress the valve stem protruding from center of the removed connector. Bleed the cable until all air is purged. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>d.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="d.">Reconnect the 26V power cable to the power source. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">8.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="8.">Bleed the modules with blanking caps (if present):</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Remove the blanking cap.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Press on the SeaNet penetrator to allow any trapped air to exit the node. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>c.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="c.">Once there is no more air coming from the penetrator, fill the blanking cap with compensation fluid and install it on the penetrator.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">9.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="9.">Bleed the compensated fiber lines.</td>
+                            </tr>
+                        </table>
+                        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Fiber lines are NOT compensated by the node.</p>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Leave the fiber line connected to the IPDS T-box and disconnect the fiber line at the other end.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Elevate the cable to allow air to rise to the disconnected end. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>c.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="c.">Press in on the fiber end with a fiber cap. Bleed the cable until all air is purged.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Only use a proper ST fiber cap to bleed cables. Never insert other objects.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2" style="text-align: center;">
+                        <img src="../../Images/SIs/02000004_158x162.jpg" style="width: 158;height: 162;" class="SI_step" /> <img src="../../Images/SIs/02000005_127x163.jpg" style="width: 127;height: 163;" class="SI_step" /></td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>d.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="d.">Reconnect the fiber cable. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">10.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="10.">Bleed the node from the pressure relief valve again to remove any remaining air. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">11.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="11.">Disconnect the compensation cart and reconnect the compensation circuit QD.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyA-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">12.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="12.">Inspect the compensator levels when finished. Fill as needed. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="bold_break">Draining</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/SI_steptable.css');" class="TableStyle-SI_steptable" cellspacing="0">
+            <col class="TableStyle-SI_steptable-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Disconnect any SeaNet cables connected to the node.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Install caps over the exposed penetrators.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Install plugs into the exposed SeaNet cables.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Disconnect the compensation QD closest to the node being drained. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Attach the compensation cart to the node QD (A).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Open the relief valve (B) to prevent a vacuum from forming.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Drain the compensation fluid from the node by turning the cart selector lever to the DRAIN position. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyB-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Once fluid stops flowing from the node, turn the cart selector lever to the OFF position. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/ROV Service/01484.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

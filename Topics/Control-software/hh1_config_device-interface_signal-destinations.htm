@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Device Interfaces and Signal Types">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Device Signal Destinations</title>
+        <meta name="description" content="This manual section lists the processing locations for signals from ROV system devices. This section also describes signal mirroring and shows an illustration of how device signals are routed." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor216"></a>
+            <MadCap:concept term="hh_config_device-interface" />Device Signal Destinations</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device-interface" href="javascript:void(0);" data-mc-topics=" Interface Module Locations and Quantities for Devices|hh1_config_device-interface_im-locations.htm#aanchor217||Device Interface Categories|hh1_config_device-interface_categories.htm#aanchor214||Device Signal Destinations|#aanchor216||Device Signal Types|hh1_config_device-interface_signal-types.htm#aanchor215||Device User Interfaces and Mirroring Compared|hh1_config_device-interface_user-mirror.htm#aanchor218"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about signal processing and device interfaces.</p>
+        <h2>Signal Processing Locations</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Signal Processing Locations</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Device Signal Destination</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">System interface</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">The device sends communications through the DTS network to the RTC for processing by the ROV control system. Device data is  available on control system screens and the device is controlled by ROV system software.</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1"> Most actuators, tools, navigation equipment, lights, and sensors have a system interface. For example, a light that is controlled through the LIGHTS panel on the FLIGHT screen has a system interface.</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">User interface</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">
+                        <p>In a process called “user tunneling,” the device sends serial communications through the DTS network but does not communicate with the ROV control system. Data is transmitted from the device to a rack node port, and from there to a customer’s external computer or other processing equipment for customer use. The device is then operated from the external computer rather than the ROV control system.</p>
+                        <p>For user tunneling to work, the customer’s computer or processing equipment must be attached to the rack node that is communicating with the device.
+</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">
+                        <p>Includes preconfigured devices that will be operated by an external computer like a DVL used by a survey system.</p>
+                        <p>Includes <b>all</b> custom devices (like a navigation instrument that is not on the list of preconfigured devices).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For information about signal processing locations for video signals in TAVS and HDEVS, see <a href="hh1_flight_video_tavs-hardware.htm" class="MCXref xref"><i>Hardware and Data Routing for TAVS Video</i></a> and <a href="hh1_flight_video_hdevs-hardware.htm" class="MCXref xref"><i>Hardware and Data Routing for HDEVS Video</i></a>.</p>
+        <h2>Signal Mirroring (Duplication)</h2>
+        <p>In mirroring, a device's signals are duplicated (that is, device signals are split into two separate, identical signal sets).</p>
+        <p class="Heading_No_Num">Mirroring Used with a System Interface</p>
+        <p>Mirroring is generally used with devices that have a system interface (that is, they communicate with the RTC). In this arrangement, one signal set is sent to the RTC for processing by the ROV control system, and the other is sent ("mirrored") to a rack node port where it can be accessed by the a customer computer or other customer processing device.</p>
+        <p> In an example of mirroring for a device with a system interface, DVL signals are sent to the RTC for use in StationKeep and other automatic control modes, while a duplicate set of DVL signals is simultaneously sent to a customer’s survey computer.</p>
+        <p class="Heading_No_Num">Mirroring Used with a User Interface</p>
+        <p>Devices that use a serial user tunnel (where processing occurs in customer equipment instead of the RTC) can also be mirrored. (However, mirroring is much less common for devices with a user interface than for those with a system interface). For mirroring of a device with a user interface, each of the two identical signal sets is communicated through a rack node port. However, only one of the signal sets can control the device.</p>
+        <h2>Signal Routing Illustration</h2>
+        <p>
+            The figure below illustrates signal paths for system interfaces and user interfaces. The illustration of mirrored device signals shows a device with a system interface that also has a duplicate signal set sent to customer equipment.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>The figure below does not show realistic hardware connections, but instead shows signal origins and destinations.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/hh_config_device_system-custom-mirror.svg" />
+        </p>
+        <p>For additional information about user tunnels and mirroring, see <a href="hh1_config_device-interface_user-mirror.htm" class="MCXref xref"><i>Device User Interfaces and Mirroring Compared</i></a>.</p>
+        <p>For information about routing for video signals in TAVS and HDEVS, see <a href="hh1_flight_video_tavs-hardware.htm" class="MCXref xref"><i>Hardware and Data Routing for TAVS Video</i></a> and <a href="hh1_flight_video_hdevs-hardware.htm" class="MCXref xref"><i>Hardware and Data Routing for HDEVS Video</i></a>.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device-interface_signal-destinations.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Video Display and Recording">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Hardware and Data Routing for HDEVS Video</title>
+        <meta name="description" content="This manual section describes HDEVS harware, including HD cameras that output Ethernet signals, cameras that output composite analog video signals, decoder modules that convert Ethernet signals for display, and a video computer that overlays and records video." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor123"></a>
+            <MadCap:concept term="hh_flight_video_hdevs" />Hardware and Data Routing for HDEVS Video</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_video_hdevs" href="javascript:void(0);" data-mc-topics="About ROV Video Systems|hh1_flight_video_overview.htm#aanchor119||About the Control Console Monitors|hh1_controls_mon-wall_overview.htm#aanchor21||About the HDEVS Video Computer App|hh1_vca_about.htm#aanchor164||Applying a Camera Profile|hh1_config_device_camera-profile.htm#aanchor268||Camera Configuration Properties|hh1_config_device_prop-vid_cam-gen.htm#aanchor259||Flight Screen Video  Panel|hh1_flight_video_panel.htm#aanchor124||Hardware and Data Routing for HDEVS Video|#aanchor123||SD Video Topside Encoder Configuration Properties|hh1_config_device_prop-vid_sd-encoder.htm#aanchor263||Video Decoder Configuration Properties|hh1_config_device_prop-vid_decoder.htm#aanchor261||Video Subsystem Diagnostics Display|hh1_diag_rov_video_subsys_overview.htm#aanchor404"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about video functions and devices for HDEVS.</p>
+        <p>This information applies only to ROV systems that have <span class="VariablesHDEVS">HDEVS</span> rather than <span class="VariablesSD video system (legacy)">TAVS</span>.</p>
+        <h2>HDEVS Hardware Connections</h2>
+        <p>Primary HDEVS&#160;hardware modules are:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">HD cameras that output Ethernet signals (typically, the Schilling HD&#160;Ethernet camera) and attach to node NIMs. Each HD camera simultaneously outputs an HD video stream and an SD video stream. You can choose whether to view and/or record the HD stream or the SD stream.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Cameras that output composite analog video signals (typically, SD cameras that output signals in NTSC or PAL format). Signals are converted to Ethernet in a subsea node SDVIM.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Standard DTS communications hardware.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Decoder modules that convert Ethernet signals to video signals for display.  Typically, a decoder is mounted on the back of a monitor. Each decoder has two output connectors:</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">Connector for monitors with an HDMI interface (HDMI 1080p60).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">Connector for monitors with an SD composite analog video interface (BNC connector), NTSC or PAL.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">An SD video topside encoder, which can input up to four video streams from SD deck cameras. Output from a SD deck camera is treated in the same way as subsea SD cameras (routed to a decoder for viewing or recording).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">A video computer that creates overlays for and records SD and HD video (see <a href="hh1_vca_about.htm" class="MCXref xref"><i>About the HDEVS Video Computer App</i></a>).</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_hdevs_block-diagram_528x343.jpg" class="width_5pt5" style="width: 528;height: 343;" />
+        </p>
+        <h2>HDEVS Video Routing</h2>
+        <p>The diagram below shows routing for all video streams in <span class="VariablesHDEVS">HDEVS</span>. Video streams can come from:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Both HD Ethernet cameras and SD cameras</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Both subsea and deck cameras</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/hdevs_signal-routing_672x433.png" style="width: 672;height: 433;" />
+        </p>
+        <p class="Heading_No_Num">Video Data Flow for Subsea Cameras</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">A camera captures video and sends it to an interface module connected to a node.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For an HD camera, video signals are converted to Ethernet signals in the camera, and are then sent to a NIM.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For an SD camera, composite video signals are sent to an SDVIM, where they are converted to Ethernet signals.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">From the interface module, signals travel through the DTS system (from subsea node  to a rack node) to a decoder attached to a monitor. The monitor can be on the monitor wall or some other location (like the vessel’s bridge).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">The decoder converts Ethernet signals back into video and also multiplexes any overlays onto the video. (Overlays come from the video computer.)</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Signals go from the decoder to the monitor for display.</td>
+            </tr>
+        </table>
+        <p>Output from a single camera can be simultaneously routed to multiple sources, including monitors and the video computer for recording.</p>
+        <p>Any monitor with a decoder can be divided into four separate video displays (quad tiling). Monitors with quad tiling can display only SD video. If you want to display output from an HD camera in a quad-tiled display, you must select the SD video stream from the HD camera.</p>
+        <p class="Heading_No_Num">Overlay Data Flow</p>
+        <p>An overlay can be a graphic image (like a logo) or a data stream (like heading information from the control system). Overlay information is routed from the video computer through a  rack node to the decoder for multiplexing onto the video.</p>
+        <p class="Heading_No_Num">Recording Data Flow</p>
+        <p>Video signals are routed from the rack node to the video computer for recording.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_video_hdevs-hardware.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

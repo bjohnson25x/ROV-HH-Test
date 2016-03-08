@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Device Interfaces and Signal Types">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Device User Interfaces and Mirroring Compared</title>
+        <meta name="description" content="In both user interfaces and mirroring, device signals are sent to a rack node for access by an external computer or other processing device. However, user interfaces and mirroring are typically used by different device types and for different purposes." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor218"></a>
+            <MadCap:concept term="hh_config_device-interface" />Device User Interfaces and Mirroring Compared</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device-interface" href="javascript:void(0);" data-mc-topics=" Interface Module Locations and Quantities for Devices|hh1_config_device-interface_im-locations.htm#aanchor217||Device Interface Categories|hh1_config_device-interface_categories.htm#aanchor214||Device Signal Destinations|hh1_config_device-interface_signal-destinations.htm#aanchor216||Device Signal Types|hh1_config_device-interface_signal-types.htm#aanchor215||Device User Interfaces and Mirroring Compared|#aanchor218"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about signal processing and device interfaces.</p>
+        <p>In both user interfaces and mirroring, device signals are sent to a rack node for access by an external computer or other processing device. However, user interfaces and mirroring are typically used by different device types and for different purposes:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">In user interfaces, the device is controlled not by the ROV control system but by customer-supplied equipment that communicates with the device through the user tunnel.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">In mirrored interfaces, the device is typically controlled by the ROV control system, but a duplicated data stream from the device is sent through a rack node port to customer-supplied equipment for data analysis or logging.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>When you create a user interface (with its user tunnel) or a mirror to a rack node port, the ROV control system reserves that port so that it can’t be used for anything else as long as the user tunnel or mirror exists. If you remove the device from ROV system, the rack node port for the tunnel or mirror is released for other uses.</p>
+        <p class="Heading_No_Num">Configuring a User Tunnel</p>
+        <p>User tunnels are established when you add a device to the ROV system (see <a href="hh1_config_device-add-del_add-preconfig.htm" class="MCXref xref"><i>Installing a Preconfigured Device</i></a> and <a href="hh1_config_device-add-del_add-custom.htm" class="MCXref xref"><i>Installing a Custom Device</i></a>). At that time, you can pick a rack node port for the user tunnel.</p>
+        <p class="Heading_No_Num">Configuring a Mirror Port</p>
+        <p>Mirror ports are established after you have already added the device.</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">On any CONFIGURATION screen, tap the DEVICE tab.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap EDIT CONFIGURATION.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">In the EDIT CONFIGURATION panel, tap the MIRROR PORT tab.</td>
+            </tr>
+        </table>
+        <p>See <a href="hh1_config_device_mirror-port.htm" class="MCXref xref"><i>MIRROR&#160;PORT Configuration Tab</i></a> for additional steps.</p>
+        <p class="Heading_No_Num">Creating a Temporary Test Tunnel</p>
+        <p>If you need to run test software for a device with a system interface, you can temporarily reroute device signals from the ROV control system and send the signals through a test tunnel to a rack node port. For more information, see <a href="hh1_diag_device_port_pwr-comms.htm" class="MCXref xref"><i>Port POWER AND COMMUNICATION Diagnostics Panel</i></a>.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device-interface_user-mirror.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

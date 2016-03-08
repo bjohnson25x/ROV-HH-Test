@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Video Display and Recording">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Hardware and Data Routing for TAVS Video</title>
+        <meta name="description" content="In TAVS, video streams from system cameras are sent topside, where the control system can display them on the monitor wall. You can also direct video streams to user-accessible ports for export to devices for recording or display." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor122"></a>
+            <MadCap:concept term="hh_flight_video_tavs" />Hardware and Data Routing for TAVS Video</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_video_tavs" href="javascript:void(0);" data-mc-topics="About ROV Video Systems|hh1_flight_video_overview.htm#aanchor120||About the Control Console Monitors|hh1_controls_mon-wall_overview.htm#aanchor20||Camera Configuration Properties|hh1_config_device_prop-vid_cam-gen.htm#aanchor258||Configuring the Switcher for TAVS Video|hh1_config_video-tavs-switcher.htm#aanchor342||Flight Screen Video  Panel|hh1_flight_video_panel.htm#aanchor125||Hardware and Data Routing for TAVS Video|#aanchor122||TAVS Subsea Camera Installation and Configuration|hh1_config_video-tavs_subsea-camera.htm#aanchor343||TAVS Topside Video Input Device Installation and Configuration|hh1_config_video-tavs_topside-vid-input-device.htm#aanchor344||TAVS Topside Video Output Device Installation and Configuration|hh1_config_video-tavs_topside-vid-output-device.htm#aanchor345||Video Subsystem Diagnostics Display|hh1_diag_rov_video_subsys_overview.htm#aanchor405"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about video functions and devices for TAVS.</p>
+        <p>This information applies only to ROV systems that have <span class="VariablesSD video system (legacy)">TAVS</span> rather than <span class="VariablesHDEVS">HDEVS</span>.</p>
+        <p>In TAVS, video streams from system cameras are sent topside, where the control system can display them on the monitor wall. You can also direct video streams to user-accessible ports for export to devices for recording or display.</p>
+        <p>For information on video collected from a survey junction box (optional), see the section on the survey junction box in <span style="font-style: italic;" class="VariablesVol 4 Part Lists &amp; Drawings">Drawings and Part Lists</span>.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>In descriptions of TAVS signal routing, <b>video signals are described as inputs or outputs from the viewpoint of the video switcher</b>. For example, the output from a camera is described as an input because the signals are input to the video switcher.</p>
+        <h2>TAVS Hardware Items</h2>
+        <p class="Heading_No_Num">Video Interface Modules and DTS Nodes</p>
+        <p>The server (subsea) video interface module, or VIM (see <a href="hh1_config_device-interface_signal-types.htm" class="MCXref xref"><i>Device Signal Types</i></a>) takes composite video, digitizes and compresses it using the Motion JPEG format, and forwards it to the subsea node in the form of Ethernet packets. The subsea node receives the Ethernet packets and transports them through a fiber link to the topside rack nodes.</p>
+        <p>The client (topside) VIM  receives the Ethernet packets through a fiber link, decodes the Motion JPEG, and creates a composite video output that is directed to the video switcher.</p>
+        <p class="Heading_No_Num">Video Switcher</p>
+        <p>The switcher receives incoming composite video streams and distributes them to one or more composite video outputs, as selected on the VIDEO SWITCH screen. A single video feed can be simultaneously routed to multiple locations. Switcher outputs are typically directed to an annotator and to the multiviewers that furnish video to the top-left and top-right screens on the monitor wall. Outputs can also be directed to user-supplied displays or recording equipment.</p>
+        <p class="Heading_No_Num">Annotator</p>
+        <p>The annotator allows the overlay of computer graphics, logos, arrows, pointers, and text onto three composite video images from the switcher. You can use the KVM-switched keyboard and mouse to access the annotator user interface. Through this interface, you can add new annotation text and graphics.</p>
+        <p>An annotator string, which is output from the serial expander, supplies ROV navigation data to the annotator serial port (see <a href="hh1_software_data_output_annotator.htm" class="MCXref xref"><i>Annotator String Output for Video in TAVS</i></a>).</p>
+        <p>For details on using the annotator, see the annotator OEM&#160;manual in <span class="VariablesSupportFiles">Support Files</span>\OEM Docs\Video\Video Annotators-Overlay\.</p>
+        <p class="Heading_No_Num">Video Multiviewers</p>
+        <p>Each multiviewer receives four video outputs and routes each to a quadrant on the top-left or top-right screen on the monitor wall (see <a href="hh1_controls_mon-wall_overview.htm" class="MCXref xref"><i>About the Control Console Monitors</i></a>).</p>
+        <h2>TAVS Hardware Connections</h2>
+        <p>For TAVS systems using only standard-definition (SD) composite video cameras:</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/hh_tavs-sd_block_diag_528x231.png" class="width_5pt5" style="width: 528;height: 231;" />
+        </p>
+        <p>For TAVS systems using both SD and high-definition (HD) cameras:</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/hh_tavs-hd_block_diag_528x351.png" class="width_5pt5" style="width: 528;height: 351;" />
+        </p>
+        <h2>TAVS Signal Routing/Configuration for Hardware and Software</h2>
+        <p>To route and configure video signals properly, you must understand how signals travel through the DTS system and how the video switcher is used to route video inputs and outputs.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>In descriptions of TAVS signal routing, <b>video signals are described as inputs or outputs from the viewpoint of the video switcher</b>. For example, the output from a camera is described as an input because the signals are input to the video switcher.</p>
+        <p class="Heading_No_Num">DTS Signal Routing</p>
+        <p>DTS signal routing is explained in detail in other sections of the technical manual. Concerning subsea cameras, note that camera signals are not processed through the ROV control system. Instead, a subsea camera is attached to a subsea node VIM port and signals are then tunneled to a rack node VIM. From the rack node VIM, signals are routed to the video switcher.</p>
+        <p class="Heading_No_Num">Video Switcher Routing</p>
+        <p>The video switcher contains input ports and output ports. These ports are connected with cables to video inputs (from devices like topside cameras) and outputs (to devices like monitors, annotators, and DVD recorders). Once cables have been connected to the video switcher, you must inform the control system about the hardware connections so that the control system can accurately route video. You do this by configuring the video switcher.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Cameras can be only video inputs to the switcher, and monitors can be only video outputs. Other devices, such as annotators and recorders, can simultaneously be both video inputs and outputs. See the ROV system interconnect drawing (in <span class="VariablesVol 4 Part Lists &amp; Drawings">Drawings and Part Lists</span>) to determine how video devices are connected for this ROV system.</p>
+        <p>If you do not accurately identify the hardware connections for the video switcher, video will not be correctly routed.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_video_tavs-hardware.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

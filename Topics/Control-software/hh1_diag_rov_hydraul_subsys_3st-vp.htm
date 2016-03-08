@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Diagnostics|ROV Diagnostic Details|ROV Hydraulic Subsystem Diagnostics Display">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Schilling 3-ST Valve Pack Diagnostics</title>
+        <meta name="description" content="From the diagnostics screen for the Schilling 3-ST valve pack, you can view circuit information and calibrate all circuits." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor389"></a>
+            <MadCap:concept term="hh_diag_rov_hydraul-subsys" />Schilling 3-ST Valve Pack Diagnostics</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_diag_rov_hydraul-subsys" href="javascript:void(0);" data-mc-topics=" ISOL-8 Pump Diagnostics|hh1_diag_rov_hydraul_subsys_iso-pump.htm#aanchor388||8-Liter Compensator/Reservoir Diagnostics|hh1_diag_rov_comp-res_subsys_8-l.htm#aanchor377||About the ROV Hydraulics Subsystem Diagnostics Display|hh1_diag_rov_hydraul_subsys_overview.htm#aanchor385||Calibrating an HPU (HD and UHD-II Systems Only)|hh1_diag_rov_hydraul_subsys_hpu-calib.htm#aanchor387||Manipulator Diagnostics|hh1_diag_rov_hydraul_subsys_manip.htm#aanchor390||Schilling 3-ST Valve Pack Diagnostics|#aanchor389||TMS Hydraulics Subsystem Diagnostics Display (UHD-II Only)|hh1_diag_tms_hydraul_subsys_overview.htm#aanchor411"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to diagnostics information for the ROV hydraulic subsystem.</p>
+        <p>From the diagnostics screen for the Schilling 3-ST valve pack, you can:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">View circuit information.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Calibrate all circuits.</td>
+            </tr>
+        </table>
+        <p class="Heading_No_Num">Viewing Circuit Pressure and Flow</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>The control system uses “feedback counts” (shown on the screen as FB&#160;COUNTS) to describe pressure and flow levels. These counts are not in any particular unit (like psi or milliliters); they are internally defined units used by the control system to calibrate hydraulic equipment.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_hydraulics_3f-detail_672x557.png" style="width: 672;height: 557;" />
+        </p>
+        <p>In the list of circuits, "USER PRESSURE" refers to pressure measured manually at the AUX PRESSURE SNSR port with a user-supplied line and gauge.</p>
+        <p class="Heading_No_Num">Calibrating the 3-ST Valve Pack</p>
+        <p>Pressure and flow settings for 3-station valve pack hydraulic circuits are calibrated at the factory, but changes to circuit components or component wear can make the factory settings inaccurate. If pressure or flow response seems to be inaccurate, calibrate the circuit.</p>
+        <p>Before beginning the calibration, perform the steps described in the service instruction for 3-ST calibration setup.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Heat generated by extended on-deck operation of ROV or TMS&#160;equipment can damage the equipment and related components. During on-deck operations, do not override temperature safety limits set in the ROV control system software. Overriding safety limits can result in component damage or failure.  When equipment is running in air, do not touch the equipment to test temperature.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>The control system uses “feedback counts” (shown on the screen as FP&#160;COUNTS) to describe pressure and flow levels. These counts are not in any particular unit (such as psi or milliliters); they are internally defined units used by the control system to calibrate hydraulic equipment.</p>
+        <p>You must calibrate each circuit in the <span class="VariablesSchilling 3-station valve pack">Schilling 3-ST valve pack</span> separately.</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">On the DIAGNOSTICS screen for the <span class="VariablesSchilling 3-station valve pack">Schilling 3-ST valve pack</span>, tap CALIBRATE.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">When the VALVE PACK CALIBRATION panel appears, select the desired circuit and function from the drop-down list. You must separately calibrate pressure and flow for each circuit.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap START&#160;CALIBRATION to begin the process.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">If you are calibrating circuit pressure, the calibration process will cycle automatically through each pressure set point.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">If you are calibrating flow, you must tap the screen to select each flow point.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">When you are prompted at each set point, tap the READING field, and using the pop-up keypad, enter the current value from the analog gauge installed on the valve pack.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">After you have entered readings for each set point, tap the SAVE CALIBRATION button. You cannot save the calibration unless you have entered all pressure or flow readings.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_rov_hydraulics_3f-calibrate_672x438.png" class="width_7" style="width: 672;height: 438;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_diag_rov_hydraul_subsys_3st-vp.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

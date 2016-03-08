@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Hydraulic Circuit Operation and Control">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Setting Hydraulic Circuit Flow (UHD-III  Only)</title>
+        <meta name="description" content="In the UHD-III hydraulic configuration, you can set hydraulic flow for an  aux hydraulic circuit (if that circuit is configured for flow control)." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor100"></a>
+            <MadCap:concept term="hh_flight_hpu" />Setting Hydraulic Circuit Flow (UHD-III  Only)</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_hpu" href="javascript:void(0);" data-mc-topics="About FLIGHT Screen Hydraulic Circuit Control|hh1_flight_hpu_overview.htm#aanchor96||About the ROV Hydraulics Subsystem Diagnostics Display|hh1_diag_rov_hydraul_subsys_overview.htm#aanchor386||Automatic HPU Motor Shutdown, Power Management, and Pressure Limiting|hh1_flight_hpu_auto-limits.htm#aanchor102||HPU Calibration Requirements|hh1_flight_hpu_calib-requirement.htm#aanchor103||Priming an Auxiliary Hydraulic Circuit (UHD-III Only)|hh1_flight_hpu_isopump-prime.htm#aanchor101||Setting Hydraulic Circuit Flow (UHD-III  Only)|#aanchor100||Setting Hydraulic Circuit Pressures|hh1_flight_hpu_set-pressure.htm#aanchor99||TMS Hydraulics Subsystem Diagnostics Display (UHD-II Only)|hh1_diag_tms_hydraul_subsys_overview.htm#aanchor412||Turning HPU Power On and Off|hh1_flight_hpu_power-on-off.htm#aanchor98||Viewing and Overriding HPU Shutdown Limits|hh1_flight_hpu_override.htm#aanchor97"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about operating and controlling hydraulic circuits.</p>
+        <p>For ROV systems with the UHD-III hydraulic configuration, you can set hydraulic flow for an <span class="VariablesIsolation pump">ISOL-8 pump</span> aux hydraulic circuit only if that circuit is configured for flow control.</p>
+        <p>Maximum flow for an eight-cylinder <span class="VariablesIsolation pump">ISOL-8 pump</span> is:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Aux circuit 1, 197 lpm (52 gpm).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Aux circuit 2, 99 lpm (26 gpm).</td>
+            </tr>
+        </table>
+        <p>Maximum flow for a four-cylinder <span class="VariablesIsolation pump">ISOL-8 pump</span> (aux circuit 1) is 132 lpm (35 gpm).</p>
+        <p>To change the hydraulic circuit flow:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the <span class="VariablesIsolation pump">ISOL-8 pump</span> circuit is configured to allow flow control (see <a href="hh1_config_device_prop-hydr_iso-pump.htm" class="MCXref xref"><i>ISOL-8 Pump Device Configuration Properties</i></a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">From the FLIGHT screen, tap HPU.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">When the HYDRAULIC&#160;PRESSURE&#160;CONTROL panel displays, tap the tab for the desired aux circuit.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Drag the slider in the FLOW gauge to change circuit flow.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_hpu_uhd3_flow_aux_672x385.png" alt="" title="" style="width: 672;height: 385;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_hpu_set-flow.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

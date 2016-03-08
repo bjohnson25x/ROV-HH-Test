@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Installing and Removing Devices">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>About Installing and Removing Devices</title>
+        <meta name="description" content="To install and/or remove ROV system devices, you must plug in and/or unplug the devices from the node ports, and you must also configure the control system so that it contains accurate information about the hardware currently plugged into node ports." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor219"></a>
+            <MadCap:concept term="hh_config_device-add-del" />About Installing and Removing Devices</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device-add-del" href="javascript:void(0);" data-mc-topics="About Installing and Removing Devices|#aanchor219||Adding or Removing a Node or Changing a Node ID|hh1_config_device-add-del_node.htm#aanchor226||Core Preconfigured Devices|hh1_config_device-add-del_core-device.htm#aanchor220||Installing a Custom Device|hh1_config_device-add-del_add-custom.htm#aanchor223||Installing a Preconfigured Device|hh1_config_device-add-del_add-preconfig.htm#aanchor221||Installing, Moving, and Deleting an Auto-Configuration Device|hh1_config_device-add-del_auto-config-ethrnt.htm#aanchor222||Maximum Device Limit (for Installing Devices)|hh1_config_device-add-del_max-limit.htm#aanchor224||Removing a Device|hh1_config_device-add-del_del.htm#aanchor225"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about installing and removing devices.</p>
+        <p>Installing and/or removing ROV system devices involves two separate actions:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You must plug in and/or unplug the devices from the node ports.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You must configure the control system so that it contains accurate information about the hardware currently plugged into node ports.</td>
+            </tr>
+        </table>
+        <p>Some devices (called auto-configuration devices, described in <a href="hh1_config_device-add-del_auto-config-ethrnt.htm" class="MCXref xref"><i>Installing, Moving, and Deleting an Auto-Configuration Device</i></a>) are able to independently communicate with the control system (about the device type and port location) when you plug the devices into ports and turn them on. But most devices attached to node ports cannot communicate independently, and you must manually change the control system when you make device/location changes.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>If you do not accurately match device hardware on a node port with the control system information about the device, equipment may malfunction.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Always turn off node port power before you plug in or unplug a device from a node port; failing to do this may damage port hardware and/or the device.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Before you configure the control system to install, move, remove, or configure nodes and/or devices, you may want to make a manual backup of the control system configuration setup. If your changes are not successful, you can "undo" them by reloading the previous configuration setup.</p>
+        <p>You must have supervisor permissions to install or remove a device in the control system.</p>
+        <p>Before you can install a device, you must know whether:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The device is a preconfigured device or a custom device (as defined in <a href="hh1_config_device-interface_categories.htm" class="MCXref xref"><i>Device Interface Categories</i></a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The device is an auto-configuration device (see <a href="hh1_config_device-add-del_auto-config-ethrnt.htm" class="MCXref xref"><i>Installing, Moving, and Deleting an Auto-Configuration Device</i></a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●"> The device transmits serial, video, or Ethernet signals.</td>
+            </tr>
+        </table>
+        <p>You can install a device in the control system before you have plugged the device into a node port. However, by plugging in the device first, you can test the device installation while you are installing the device in the control system.</p>
+        <p>After you have installed a new device in the control system, check to ensure that the device is using the proper node interface module.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>The control system cannot check to ensure that you have connected a device to a compatible interface module on a node port. (For example, the control system does not detect the connection of a device that sends serial signals to a port with a video interface module.) If you do not accurately match port hardware with the configuration information about that hardware, equipment may malfunction.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device-add-del_overview.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

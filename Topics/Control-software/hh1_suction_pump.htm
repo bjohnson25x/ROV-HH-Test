@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Using Hydraulic Tools|Controlling Hydraulic Tools (Including Manipulators)" data-mc-ignored-words="DP;3F;ValvePacks;s;Venturi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Suction Pile Graphical User Interface</title>
+        <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Module msdt:dt="string"></mso:Module>
+<mso:Project msdt:dt="string">HAMMERHEAD</mso:Project>
+<mso:Affected_x0020_Part_x0020__x0023_s msdt:dt="string"></mso:Affected_x0020_Part_x0020__x0023_s>
+<mso:File_x0020_Type_x0020_1 msdt:dt="string"></mso:File_x0020_Type_x0020_1>
+<mso:Asset_x0020_Owner msdt:dt="string"></mso:Asset_x0020_Owner>
+<mso:Next_x0020_Level_x0020_Assy msdt:dt="string"></mso:Next_x0020_Level_x0020_Assy>
+<mso:Status msdt:dt="string">Draft - DO NOT USE</mso:Status>
+<mso:Doc_x0020_Type msdt:dt="string">Controls - descriptive</mso:Doc_x0020_Type>
+<mso:Comments_x002f_keywords msdt:dt="string">Hammerhead, Configuration home page; device</mso:Comments_x002f_keywords>
+<mso:Software_x0020_Component msdt:dt="string">Config Page</mso:Software_x0020_Component>
+<mso:Order msdt:dt="string">39300.0000000000</mso:Order>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Suction Pile Graphical User Interface</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_tool_hydr" href="javascript:void(0);" data-mc-topics="About BOP (Blowout Preventer) Intervention|hh1_tool_hydr-tools_bop-overview.htm#aanchor151||About Controlling Hydraulic Tools|hh1_tool_hydr-tools_overview.htm#aanchor142||About Operating Tools with the ISOL-8 Pump|hh1_tool_hydr-tools_isopump_overview.htm#aanchor146||Adding and Deleting a Hydraulic Tooling Package|hh1_tool_add-del.htm#aanchor143||Hydraulics for Position-Controlled Manipulators|hh1_tool_hydr-tools_manip-pos.htm#aanchor145||Hydraulics for Rate-Controlled Manipulators|hh1_tool_hydr-tools_manip-rate.htm#aanchor144"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about tool hydraulics.</p>
+        <p>The SUCTION&#160;PILE operation screen provides control and feedback to assist with using a suction pile pump. The suction pile pump operation screen operates in Differential Pressure Flow Calculation Mode (DP&#160;Flow Mode). DP&#160;Flow Mode requires two Stellar Technology Inc. (STI) sensors.</p>
+        <p>Feedback data is gathered and calculated as shown in the table below.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Data Sources for Suction Pile Pump</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Feedback </th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">DP&#160;Flow Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Displaced volume</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1" style="vertical-align: middle;padding-left: 2px;padding-right: 2px;padding-top: 1px;padding-bottom: 1px;border-left-width: .5em;border-top-width: .5em;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Calculated from DP sensor connected to Venturi at pump inlet</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Stinger differential</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1" style="vertical-align: middle;padding-left: 2px;padding-right: 2px;padding-top: 1px;padding-bottom: 1px;border-left-width: .5em;border-top-width: .5em;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">DP sensor connected to end of stinger</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1" style="vertical-align: middle;padding-left: 2px;padding-right: 2px;padding-top: 1px;padding-bottom: 1px;border-left-width: .5em;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-width: .5em;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Flow rate</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Calculated from DP sensor connected to Venturi at pump inlet</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Heading</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">ROV heading</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">Progress</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">Current depth minus seafloor depth</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Installation</h2>
+        <p>You must install the Suction Pile tooling package in order to view the suction pile configuration and operation screens. See <a href="hh1_tool_add-del.htm" class="MCXref xref"><i>Adding and Deleting a Hydraulic Tooling Package</i></a></p>
+        <p>Before using the suction pile pump, you must also ensure that an appropriate flow source sensor and stinger source sensor are installed and included in the list of control system devices. See <a href="hh1_config_device-add-del_head-only.htm" class="MCXref xref"><i>Installing and Removing Devices</i></a> for more information.</p>
+        <h2 class="No_Break">Configuration Screen</h2>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_config_tooling_suction-pile_528x330.png" class="width_5pt5" style="width: 528;height: 330;" />
+        </p>
+        <h3>Displaying the Suction Pile Configuration Screen</h3>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">From the Main Menu, tap CONFIGURATION.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the TOOLING tab at the top of the page.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">On the left side of the screen, tap the SUCTION&#160;PILE tool button.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>The suction pile configuration screen will be locked out when suction pile PUMP&#160;CONTROL&#160;is enabled, preventing any edits to the configuration.</p>
+        <h3><a name="Adding"></a>Adding Suction&#160;Pile Devices</h3>
+        <p class="Heading_No_Num">LABEL</p>
+        <p>You can change the "New Suction Pile" label when configuring the Suction Pile tooling package. </p>
+        <p class="Heading_No_Num">PUMP&#160;CONTROL</p>
+        <p>Before you can operate the suction pile pump for the first time, you must select the ROV&#160;valve pack valve that will be used to power the suction pile pump. The control system will allow you to select any valve that is proportionally controlled, but you must ensure that the valve has sufficient flow to power the pump for the suction pile operation.</p>
+        <p class="Heading_No_Num">FLOW&#160;SOURCE&#160;SENSOR&#160;AND&#160;STINGER&#160;SOURCE&#160;SENSOR</p>
+        <p>You must also select the sensors that will be used for flow feedback and stinger pressure.</p>
+        <h3>Calibrating the Flow Source Sensor</h3>
+        <p>If you do not wish to use the default calibration settings for the FLOW&#160;SOURCE&#160;SENSOR, you may import a calibration file. </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Insert the USB&#160;flash drive containing the CSV calibration file.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the LOAD&#160;CALIBRATION button, select the file, and tap&#160;OPEN.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>The screen will display a graph of the calibration data (pressure, volume, and progress) when the import is successful.</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">After the file has been imported, you will be able to change the label of the calibration data set.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>You can delete any calibration files that have been imported, but can not delete the default calibration.</p>
+        <h2>Operation Screen</h2>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile_528x330.png" class="width_5pt5" style="width: 528;height: 330;" />
+        </p>
+        <h3>Displaying the Suction Pile Operation Screen</h3>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">On the Main Menu, tap TOOLING.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the TOOLS tab on the screen top right.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap the SUCTION&#160;PILE&#160;tab near the top of the screen.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>While on the Suction Pile Operation Screen, you can access power options, a diagnostics link, and a configuration link (for the assigned valve pack and both STI&#160;sensors) by long-pressing on the Suction Pile tab near the top of the screen. You can also change the label for the suction pile from this screen.</p>
+        <h3><a name="Operatin"></a>Operating the Suction Pile Pump</h3>
+        <p class="Heading_No_Num">SUCTION&#160;PILE&#160;SETUP</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile-setup_288x217.png" class="width_3" style="width: 288;height: 217;" />
+        </p>
+        <p>The LABEL text box allows you to supply a label. This label will be included in the header of the log file.</p>
+        <p>The SEAFLOOR&#160;DEPTH&#160;UPDATE button lets you enter the seafloor depth. Because the seafloor depth value automatically defaults to its most recent setting, you must use the pop-up number entry pad to manually provide seafloor depth.</p>
+        <p>The ZERO&#160;SENSORS button zeroes both the flow sensor and the pressure sensor, at the same time.  Only zero the sensors when no pressure is being applied to the sensor ports.</p>
+        <p class="Heading_No_Num">PUMP&#160;CONTROL BUTTON</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile-pump-control_192x63.png" class="width_2" style="width: 192;height: 63;" />
+        </p>
+        <p>The suction pile pump is controlled by the Pump Control button on the top right of the Suction Pile screen. Turning on pump control will begin logging and allow you to control the valve. Stopping pump control will end logging and disable control of the valve. Re-starting pump control will create a new log file. </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>If you want to "pause" pump control in order to continue logging, you can leave pump control enabled and command the valve to 0%.</p>
+        <p class="Heading_No_Num">PUMP&#160;CONTROL&#160;SLIDER</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile-control-slider_144x324.png" class="width_1pt5" style="width: 144;height: 324;" />
+        </p>
+        <p>The pump control slider commands the percentage of maximum opening for the valve on the valve pack. (For example, a value of 25 indicates that the proportional  valve is 25% open.) You can command the percentage of flow using the slider or the up/down arrows. If you want to assign a tactile control to the flow percentage, use the EDIT&#160;TACTILE&#160;ASSIGNMENTS&#160;button, located near the bottom right corner of the screen.</p>
+        <p>Calculated values (such as flow rate) are not displayed until the operator issues a command using the pump control slider.</p>
+        <p class="Heading_No_Num">PROGRESS</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile-progress_288x200.png" class="width_3" style="width: 288;height: 200;" />
+        </p>
+        <p>ROV&#160;heading, ROV&#160;depth, ROV&#160;altitude (when available), and pile height are displayed in a graphic in the middle of the screen. This display provides quick feedback of these values over the course of the operation.</p>
+        <p>Current pressure, volume, and progress are displayed in a chart on the right side of the screen. </p>
+        <p>The pile turns display in the lower right corner indicates how many times the pile has turned since pump control was enabled, based on how the ROV&#160;heading changes after starting the suction pile pump.</p>
+        <p class="Heading_No_Num">EXPORT&#160;DATA&#160;BUTTON</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh1_tooling_suction-pile-export_192x62.png" class="width_2" style="width: 192;height: 62;" />
+        </p>
+        <p>Each time that you use the suction pile pump, the control system saves the chart data  on both the left client computer and right client computer.</p>
+        <p> If you wish to export a log of the chart data to an external memory device:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Connect the external memory device (like a USB flash drive) to the client computer that you are using for the export operation. For example, if you are using the left console touch screen for the export operation, insert the external memory device into the left client computer.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the EXPORT DATA button.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">When the export screen panel displays, use the drop-down list to select the chart to export. Because chart files use the CSV file format, they can be imported into most spreadsheet programs.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Tap CONTINUE.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">When the SELECT FILE SAVE LOCATION panel displays, navigate to the location of the external memory device, select the desired folder, and tap SAVE.</td>
+            </tr>
+        </table>
+        <h2 class="No_Break">Key Steps for Suction Pile Pump Usage</h2>
+        <ol>
+            <li value="1">Once the ROV is deployed to the seafloor near the pile, confirm bottom lock with altitude reporting.</li>
+            <li value="2">Position the ROV near the pile location and note the ROV altitude and depth. Press the SEAFLOOR&#160;DEPTH&#160;UPDATE button and enter the sum of the ROV altitude and depth.</li>
+            <li value="3">Set up the ROV on the pile for operations: dock to the pressure/suction port on the pile.</li>
+            <li value="4">Tap the PUMP&#160;CONTROL&#160;button to start pump operations.</li>
+            <li value="5">Once pile operation is complete, tap the PUMP&#160;CONTROL button again.</li>
+            <li value="6">To view the data, tap the&#160;EXPORT&#160;DATA&#160;button in the lower right corner of the screen.</li>
+            <li value="7">Repeat steps 1 through 6 for the next pile operation.</li>
+        </ol>
+        <h2 class="No_Break">Troubleshooting</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Troubleshooting</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Symptom</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">Possible cause(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Pile turns display indicates possible loss of data, indicating that the value may not be accurate</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Loss of ROV&#160;heading feedback</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Volume display indicates possible loss of data, indicating that the value may not be accurate</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Loss of communications to the flow feedback sensor</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">
+                        <p>Pump control can not be enabled</p>
+                        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>If any of the conditions to the right occur while the pump is being operated, the valve command will be set to zero and an alarm will be raised. However, you will still be able to continue the operation.</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">A valve has not been assigned to the pump (see <a href="#Adding" class="MCXref xref selected"><i>Adding Suction&#160;Pile Devices</i></a>)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Seafloor depth has not been set (see <a href="#Operatin" class="MCXref xref selected"><i>Operating the Suction Pile Pump</i></a>)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The valve pack for the assigned valve has lost communications</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The valve pack for the assigned valve is powered off</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The assigned valve is disabled</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The valve pack for the assigned valve does not have a properly configured HPU&#160;connection (see <a href="hh1_config_device_prop-hydr_head-only.htm" class="MCXref xref"><i>Configuring Hydraulic Device Properties</i></a>)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The stinger sensor has not been assigned (see <a href="#Adding" class="MCXref xref selected"><i>Adding Suction&#160;Pile Devices</i></a>)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The stinger sensor has lost communications</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The flow feedback sensor has lost communications</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The stinger sensor is powered off</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The flow feedback sensor is powered off</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The flow feedback sensor has not been assigned (see <a href="#Adding" class="MCXref xref selected"><i>Adding Suction&#160;Pile Devices</i></a>)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The pressure is too low on the hydraulic circuit the valve is connected to (could be HPU&#160;main, HPU&#160;aux, or an ISOL-8 circuit)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The hydraulic circuit the valve is connected to is powered off (no HPU&#160;power)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_suction_pump.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

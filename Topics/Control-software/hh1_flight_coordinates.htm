@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Flight in Inertial Coordinates and Body Coordinates</title>
+        <meta name="description" content="The ROV responds to joystick movements differently depending on whether flight is in inertial coordinates (vehicle trim does not affect ROV movement) or body coordinates (vehicle trim affects ROV movement)." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor35"></a>
+            <MadCap:concept term="hh_flight_general" />Flight in Inertial Coordinates and Body Coordinates</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_general" href="javascript:void(0);" data-mc-topics="Automatic Performance Limits: Power and Thruster Limiting|hh1_flight_limits.htm#aanchor37||Controlling the ROV with the Flight Joystick|hh1_flight_fl-jstck.htm#aanchor34||Flight in Inertial Coordinates and Body Coordinates|#aanchor35||How User Profiles Affect ROV Operation|hh1_flight_profiles.htm#aanchor39||ROV System FLIGHT Screen Flight Data Displays|hh1_flight_data-display.htm#aanchor40"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to general information about ROV flight.</p>
+        <p>In the default flight mode, the ROV flies in inertial coordinates. This means that the ROV responds to flight joystick movements with flight that follows X, Y, and Z (horizontal and vertical) inertial coordinates, regardless of the vehicle trim (pitch or roll).</p>
+        <p>When the ROV is using BOTTOM MODE, it flies in body coordinates, which means that the vehicle trim affects the ROV response to flight joystick movements.</p>
+        <p class="Heading_No_Num">Example of movement in inertial coordinates</p>
+        <p>If the vehicle is pitched down 10 degrees at the front because of a load, forward joystick movement results in true horizontal travel (see the figure below, left panel) because the control software runs vertical thrusters to compensate for the pitch, which otherwise would force the vehicle down. Likewise, when the vehicle is rolled to port or starboard, commands for vertical movement may use lateral thrusters as well as vertical thrusters to achieve true vertical movement.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Illustrations-and-Photos/hh_flight_flight-coordinates_672x166.png" style="width: 672;height: 166;" />
+        </p>
+        <p class="Heading_No_Num">Example of movement in body coordinates</p>
+        <p>If the vehicle is pitched down 10 degrees, forward joystick movement causes the vehicle to move forward and down (see the figure above, right panel).</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>When BOTTOM MODE is ON, the control system does not use the vertical thrusters to compensate for ROV motion due to pitch. However, even if BOTTOM&#160;MODE&#160;is on, vertical thrusters are still used if the operator commands vertical movement. Also, if AUTO DEPTH or AUTO ALTITUDE is being used, vertical thrusters run as necessary to maintain the set point.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_coordinates.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

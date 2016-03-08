@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="" data-mc-ignored-words="Tagout;vdc;M6;Decompensate;QD;26V;pak;LEDs;2x;M5;SHCS;M4;4x">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/SI_headertable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/SI_steptable.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Subsea Node: Remove and Install</title>
+        <meta name="description" content="_" />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="CoverTitle"><a name="aanchor441"></a>
+            <MadCap:concept term="ROV System Subsea Nodes_SI" />Subsea Node: Remove and Install</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="ROV System Subsea Nodes_SI" href="javascript:void(0);" data-mc-topics="Node Compensation: Fill, Bleed, and Drain|01484.htm#aanchor440||Subsea Node: Configure ID Number, RSTP and VLAN Status|02045_hammerhead_ 4.2.htm#aanchor442||Subsea Node: Remove and Install|#aanchor441"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to service instructions related to subsea nodes.</p>
+        <p>This service instruction explains how to remove and install a subsea node.</p>
+        <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;border-collapse: collapse;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/SI_headertable.css');" class="TableStyle-SI_headertable" cellspacing="0">
+            <col class="TableStyle-SI_headertable-Column-Column1" width="100px" />
+            <col class="TableStyle-SI_headertable-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Tools</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">Compensation cart (HD systems) or rapid fill and bleed cart (UHD-III systems), hex keys (4 mm, 5 mm, 6 mm), torque wrench (0-10 Nm [0-75 in-lb])</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Personnel</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">1 worker</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Sub-Procedures</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">
+                        <p><a href="02946.htm#PDU_Lockout_Tagout" class="MCXref xref"><i>PDU: Lockout/Tagout (Safety Procedure)</i></a>
+                        </p>
+                        <p><a href="01484.htm#Node_Compensation" class="MCXref xref"><i>HD Node Compensation: Fill, Bleed, and Drain</i></a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Parts and Kits</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">None</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyE-Column1-Body1" style="font-family: Verdana;">Safety</td>
+                    <td class="TableStyle-SI_headertable-BodyD-Column2-Body1" style="font-family: Verdana;">Electrical shock (26 VDC), compressed air</td>
+                </tr>
+                <tr class="TableStyle-SI_headertable-Body-Body1">
+                    <td class="TableStyle-SI_headertable-BodyB-Column1-Body1" style="font-family: Verdana;">Consumables</td>
+                    <td class="TableStyle-SI_headertable-BodyA-Column2-Body1" style="font-family: Verdana;">Cable ties</td>
+                </tr>
+            </tbody>
+        </table>
+        <p> The main body of the node is assembled from two machined aluminum housings. The node housings are mounted to the vehicle by the four bolts at the corner of the node. Two of the four bolts are unmodified M6 HHCS (P/N 002-8005-45) (A). The other two bolts (P/N 001-7509) (B) are drilled and have O-rings to provide a compensation fluid path. </p>
+        <p class="Figure_Image">
+            <img src="../../Images/SIs/080000012_483x140.png" class="width_7" style="width: 483;height: 140;" />
+        </p>
+        <p class="bold_break">Removal</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/SI_steptable.css');" class="TableStyle-SI_steptable" cellspacing="0">
+            <col class="TableStyle-SI_steptable-Column-Column1" />
+            <col class="TableStyle-SI_steptable-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Prepare the system for safe working conditions, lock out and tag out the PDU.</td>
+                            </tr>
+                        </table>
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Always power down the instrument circuit. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Decompensate and disconnect the QD, separating the node from the compensation (see <a href="01484.htm" class="MCXref xref"><i>HD Node Compensation: Fill, Bleed, and Drain</i></a>).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Disconnect the SeaNet cables from the node and install caps and plugs to the cables and ports.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <p style="font-weight: bold;">26V Power Cable </p>
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the power is off and no residual power remains in the power converter module status window (LEDs must be fully off).</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 28px;" />
+                            <col style="width: 20px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For HD and UHD-III systems, the power converter is the IPDS HV Pak.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 28px;" />
+                            <col style="width: 20px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For UHD-II systems, the power converter is the Vicor module.</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td rowspan="3" style="text-align: right;" class="TableStyle-SI_steptable-BodyD-Column2-Body1">
+                        <p class="Figure_Image">
+                            <img src="../../Images/SIs/080000013_192x277.png" class="width_2" style="width: 192;height: 277;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Disconnect the 26V power cable from the node [(2x) M5 SHCS].</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <p style="font-weight: bold;">Compensated Fiber Optic Cable</p>
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Loosen the M4 screw (H) that secures the fiber retaining clip (F) to the fiber dome.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Remove the fiber optic cable by lifting the retaining clip and carefully pulling each fiber cable connector from the fiber dome. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Install fiber caps over the exposed fiber connectors in the node dome and cables.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>DO NOT press directly on the fiber end. This may damage it.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Remove the node from the node mounting brackets by removing the outer-most nuts at the 4 corners of the node (4x M6).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td colspan="2" class="TableStyle-SI_steptable-BodyA-Column1-Body1">
+                        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Do not loosen the inner lock nuts (C). The compensation bolts (B) can rotate within the housing and damage the bolt’s O-rings (E).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="bold_break">Installation</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/SI_steptable.css');" class="TableStyle-SI_steptable" cellspacing="0">
+            <col class="TableStyle-SI_steptable-Column-Column1">
+            </col>
+            <col class="TableStyle-SI_steptable-Column-Column2">
+            </col>
+            <tbody>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <p style="font-weight: bold;">26V Power Cable</p>
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the power is off and no residual power remains in the power converter status window (LEDs must be fully off).</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 28px;" />
+                            <col style="width: 20px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For HD and UHD-III systems, the power converter is the IPDS HV Pak.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 28px;" />
+                            <col style="width: 20px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">For UHD-II systems, the power converter is the Vicor module.</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-SI_steptable-BodyD-Column2-Body1" rowspan="3">
+                        <p class="Figure_Image">
+                            <img src="../../Images/SIs/080000014_336x316.png" class="SI_step" style="width: 336;height: 316;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Bleed the power cable by depressing the valve <br />in the center of the connector.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Ensure that the O-ring is on the connector and press the connector straight into the node socket. Make sure the O-ring remains in place.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Install the O-rings and shoulder washers onto the bolts. Fasten the power cable to the node (2x M5 SHCS; 5 Nm [45 in-lb]).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <p style="font-weight: bold;">Compensated Fiber Optic Cable</p>
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Bleed each cable before connecting it to the node: </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">Install a fiber cap over the fiber connector recessed in the node-end of the cable assembly. </td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 24px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">Depress the cap to bleed. Do not press directly on the fiber end, as this may damage it.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Lift the retaining clip, and fully insert each cable connector until it is flush with the dome face. </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Lower the retaining clip until it rests against the connector. Tighten the M4 screw.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2" style="text-align: center;">
+                        <p class="Figure_Image">
+                            <img src="../../Images/SIs/080000015_345x122.png" class="SI_step" style="width: 345;height: 122;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <p style="font-weight: bold;">Remaining Steps</p>
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Install the node onto the node mounting brackets (4x M6; 9 Nm [6.5 ft-lb]).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Connect the SeaNet cables to the node.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyD-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Connect the compensation QD to the node.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SI_steptable-Body-Body1">
+                    <td class="TableStyle-SI_steptable-BodyA-Column1-Body1" colspan="2">
+                        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 0px;" />
+                            <col style="width: 24px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Bleed the node and the SeaNet cables (see <a href="01484.htm" class="MCXref xref"><i>HD Node Compensation: Fill, Bleed, and Drain</i></a>).</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/ROV Service/01578.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

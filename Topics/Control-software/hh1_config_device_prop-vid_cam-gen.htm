@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Configuring Devices|PROPERTIES Configuration Tab|Configuring Video Device Properties">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Camera Configuration Properties</title>
+        <meta name="description" content="Camera configuration properties vary depending on the ROV’s video system type (TAVS or HDEVS) and by camera type and features." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor258"></a>
+            <MadCap:concept term="hh_flight_camera;hh_flight_video_tavs" /><a name="aanchor259"></a>
+            <MadCap:concept term="hh_flight_video_hdevs" /><a name="aanchor260"></a>
+            <MadCap:concept term="hh_config_device_prop" />Camera Configuration Properties</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="" href="javascript:void(0);" data-mc-display-type="popup"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about configuring video device properties for HDEVS.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_video_tavs" href="javascript:void(0);" data-mc-topics="About ROV Video Systems|hh1_flight_video_overview.htm#aanchor120||About the Control Console Monitors|hh1_controls_mon-wall_overview.htm#aanchor20||Camera Configuration Properties|#aanchor258||Configuring the Switcher for TAVS Video|hh1_config_video-tavs-switcher.htm#aanchor342||Flight Screen Video  Panel|hh1_flight_video_panel.htm#aanchor125||Hardware and Data Routing for TAVS Video|hh1_flight_video_tavs-hardware.htm#aanchor122||TAVS Subsea Camera Installation and Configuration|hh1_config_video-tavs_subsea-camera.htm#aanchor343||TAVS Topside Video Input Device Installation and Configuration|hh1_config_video-tavs_topside-vid-input-device.htm#aanchor344||TAVS Topside Video Output Device Installation and Configuration|hh1_config_video-tavs_topside-vid-output-device.htm#aanchor345||Video Subsystem Diagnostics Display|hh1_diag_rov_video_subsys_overview.htm#aanchor405"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about video functions and devices for TAVS.</p>
+        <p>Camera configuration properties vary depending on the ROV’s video system type (TAVS or HDEVS) and by camera type and features.</p>
+        <p data-mc-conditions="Default.9 Digital Only"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerToggler_Blue MCTogglerHotSpot_ MCTogglerHotSpot_Toggler_Blue" data-mc-targets="Camera config, TAVS"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Click to show/hide information that applies only to TAVS</a>
+        </p>
+        <p data-mc-conditions="Default.9 Digital Only"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler togglerToggler_Blue MCTogglerHotSpot_ MCTogglerHotSpot_Toggler_Blue" data-mc-targets="Camera config, HDEVS"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Click to show/hide information that applies only to HDEVS</a>
+        </p>
+        <p>To configure a camera, first, display the list of installed devices.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION  screen. (If necessary, tap CONFIGURATION on the Main Menu.)</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICES tab near the screen top.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap INSTALLED DEVICES.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>Then, configure the camera:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Tap VIDEO.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">When the list of video devices displays, select the desired camera.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap EDIT&#160;CONFIGURATION.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Tap the CAMERA&#160;PROPERTIES tab.</td>
+            </tr>
+        </table>
+        <div style="display: none;" data-mc-target-name="Camera config, TAVS">
+            <p class="Heading_No_Num">Camera Configuration Screens in TAVS</p>
+            <p>In TAVS, cameras attach to VIMs, and each camera requires connection to a subsea node VIM and a rack node VIM. (The rack node VIM port is called the client VIM.) When you configure a camera, you can:</p>
+            <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 9px;" />
+                <col style="width: 15px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Select a pan and tilt for the camera using the CAMERA PROPERTIES tab.</td>
+                </tr>
+            </table>
+            <p class="Figure_Image">
+                <img src="../../Images/Screenshots/hh_config_device_edit-config_camera_672x285.png" style="width: 672;height: 285;" />
+            </p>
+            <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 9px;" />
+                <col style="width: 15px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Add or change the camera's rack node port (client VIM) using the VIDEO&#160;TUNNEL tab.</td>
+                </tr>
+            </table>
+            <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 9px;" />
+                <col style="width: 15px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                    </td>
+                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Set the video format (NTSC or PAL) using the VIDEO&#160;TUNNEL tab.</td>
+                </tr>
+            </table>
+            <p class="Figure_Image">
+                <img src="../../Images/Screenshots/hh_config_edit-device_camtavs-tunnel_672x242.png" style="width: 672;height: 242;" />
+            </p>
+            <p> If you want to select a new client VIM for a camera, display the VIDEO&#160;TUNNEL tab. Tap REMOVE and then select a new client VIM from the drop-down list.</p>
+            <p>For more information about configuring a subsea camera in TAVS, see <a href="hh1_config_video-tavs_subsea-camera.htm" class="MCXref xref"><i>TAVS Subsea Camera Installation and Configuration</i></a>.</p>
+        </div>
+        <div style="display: none;" data-mc-target-name="Camera config, HDEVS">
+            <p class="Heading_No_Num">Camera Configuration Screens in HDEVS</p>
+            <p>In HDEVS, you can configure HD cameras and SD cameras.</p>
+            <p>An HD camera (like the Schilling HD Ethernet camera) outputs Ethernet signals and attaches to a subsea NIM.  When you configure an HD camera, you can use the CAMERA PROPERTIES tab to select a pan and tilt and to perform functions like auto focusing the camera.</p>
+            <p class="Figure_Image">
+                <img src="../../Images/Screenshots/hh_config_edit-device_camhdevs-config_672x242.png" style="width: 672;height: 242;" />
+            </p>
+            <p>On the main configuration screen for the Schilling HD&#160;Ethernet camera, you can also select a camera profile.</p>
+            <p class="Figure_Image">
+                <img src="../../Images/Screenshots/hh_config_edit-device_camhdevs-apply-profile_192x143.png" class="width_2" style="width: 192;height: 143;" />
+            </p>
+            <p>An SD cameras (like a manipulator wrist camera) attaches to an SDVIM. For an SD camera, the CAMERA PROPERTIES tab is limited to selecting a pan and tilt.</p>
+            <p class="Figure_Image">
+                <img src="../../Images/Screenshots/hh_config_edit-device_camhdevs-sdvim_192x176.png" class="width_2" style="width: 192;height: 176;" />
+            </p>
+            <p>In HDEVS, you do not configure the video format (NTSC or PAL) for an individual camera. Instead, you configure video format by configuring the video decoder attached to the display monitor for the camera (see <a href="hh1_config_device_prop-vid_decoder.htm" class="MCXref xref"><i>Video Decoder Configuration Properties</i></a>).</p>
+        </div>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device_prop-vid_cam-gen.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

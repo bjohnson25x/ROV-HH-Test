@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Using the Video Computer App (HDEVS Only)|Configuring for Recording on the Video Computer">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/Info Box_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Configuring Recording Details and Viewing Overlays</title>
+        <meta name="description" content="The VIDEO CONFIGURATION screen of the Video Computer App lets you set the number and type of video channels that can be recorded, change project ID information, and specify the audio input device for audio annotations. You can also view the current overlay and access a screen for editing the overlay." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor183"></a>
+            <MadCap:concept term="hh_vca" /><a name="aanchor184"></a>
+            <MadCap:concept term="hh_vca_config" />Configuring Recording Details and Viewing Overlays</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_vca" href="javascript:void(0);" data-mc-topics="About Exporting Video Files|hh1_vca_vid-export_about.htm#aanchor189||About Recording Video with the Video Computer|hh1_vca_record_about.htm#aanchor169||About the HDEVS Video Computer App|hh1_vca_about.htm#aanchor163||Configuring Recording Details and Viewing Overlays|#aanchor183||Creating a Video Diagnostic Snapshot|hh1_vca_diag-snapshot.htm#aanchor192||Deleting Video Files|hh1_vca_playback_delete-video.htm#aanchor188||Installing/Configuring the Video Computer App|hh1_vca_software-install-config.htm#aanchor200||Managing External Memory Devices|hh1_vca_disk-mgt.htm#aanchor168||Overview of Video&#160;Computer Recording|hh1_vca_start-to-finish_overview.htm#aanchor193||Playing Recorded Video|hh1_vca_playback.htm#aanchor187||Using the VIDEO DASHBOARD|hh1_vca_dash.htm#aanchor165||Video Computer App Offline Mode|hh1_vca_offline-mode.htm#aanchor199"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about the Video Computer App. The Video Computer App is used only with HDEVS.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_vca_config" href="javascript:void(0);" data-mc-topics="Assigning Video Event Marking to the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_event.htm#aanchor297||Configuring Recording Details and Viewing Overlays|#aanchor184||Configuring Video Event Sets and Event Types (HDEVS Only)|hh1_config_event-sets.htm#aanchor307||Creating/Editing Video Overlays|hh1_vca_overlay.htm#aanchor185||Importing/Exporting Video Overlays|hh1_vca_overlay-import-export.htm#aanchor186||Managing External Memory Devices|hh1_vca_disk-mgt.htm#aanchor167"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about configuring for recording on the video computer. This information applies only to ROV systems with HDEVS.</p>
+        <p>This information applies only to ROV systems that have <span class="VariablesHDEVS">HDEVS</span> rather than <span class="VariablesSD video system (legacy)">TAVS</span>.</p>
+        <table style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;mc-table-style: url('../../Resources/TableStyles/Info Box_Tablestyle.css');margin-left: 0;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-Info_Box_Tablestyle" cellspacing="0">
+            <col class="TableStyle-Info_Box_Tablestyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Info_Box_Tablestyle-Body-Body1">
+                    <td class="TableStyle-Info_Box_Tablestyle-BodyD-Column1-Body1">
+                        <p><b>Purpose:</b> The VIDEO CONFIGURATION screen of the Video Computer App lets you:</p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">	Use all functions available in the video preview panel.</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 9px;" />
+                                <col style="width: 15px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                    </td>
+                                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Set the number, type, and quality of video channels for recording .</td>
+                                </tr>
+                            </table>
+                            <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                <col style="width: 9px;" />
+                                <col style="width: 15px;" />
+                                <col style="width: auto;" />
+                                <tr>
+                                    <td valign="top" />
+                                    <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                    </td>
+                                    <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Specify the audio input device for audio annotations.</td>
+                                </tr>
+                            </table>
+                        </p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Change project labels (project name, location, and dive number).</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">View the current overlay (and access a screen for editing the overlay).</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Export the current overlay or import a saved overlay.</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Create a video diagnostic snapshot </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Info_Box_Tablestyle-Body-Body1">
+                    <td class="TableStyle-Info_Box_Tablestyle-BodyA-Column1-Body1"><b>Access:</b> Click the Gear icon on the VIDEO DASHBOARD.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For information on creating a video diagnostic snapshot, see <a href="hh1_vca_diag-snapshot.htm" class="MCXref xref"><i>Creating a Video Diagnostic Snapshot</i></a>.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_vca_config_672x516.png" alt="" title="" style="width: 672;height: 516;" />
+        </p>
+        <h2>Configuring Recording Details</h2>
+        <p>Use the Recording Details panel to configure video types and quality.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_vca_config_rec-details_288x230.png" class="width_3" style="width: 288;height: 230;" />
+        </p>
+        <p>After you have changed any items in the Recording Details panel, click SAVE. To cancel your changes without saving, click the Home icon to return to the VIDEO DASHBOARD.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See details</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p class="Heading_No_Num">Video Type</p>
+                <p>From the drop-down list, select the combination of video streams for recording:</p>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">HD/HD: records two HD video streams.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">HD/SD/SD: records one HD and two SD video streams.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">SD/SD/SD/SD: records four SD video streams.</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_vca_config_vid-type_288x142.png" class="width_3" style="width: 288;height: 142;" />
+                </p>
+                <p class="Heading_No_Num">File Template</p>
+                <p>Select the preferred file name template for recorded video segments. Choose the template that will let you most easily sort and identify the video file names.</p>
+                <p class="Heading_No_Num">Video Quality</p>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Smallest Size: decreases video quality and decreases the space needed to store the video.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Best Quality: increases video quality and increases the space needed to store the video.</td>
+                    </tr>
+                </table>
+                <p class="Heading_No_Num">Audio Input</p>
+                <p>Use the Audio Input drop-down box to select an input device for audio annotations. The list contains all audio input devices that have been detected by the Windows operating system.</p>
+                <p>Use the audio volume gauge to set the volume for annotations. Speak in a clear voice, and adjust the volume of the audio input device until the input volume fills two-thirds of the screen gauge.</p>
+                <p class="Heading_No_Num">Project Details</p>
+                <p>In the Project Details panel, click in fields to enter information for:</p>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Project name</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Location</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Dive number</td>
+                    </tr>
+                </table>
+                <p class="Figure_Image">
+                    <img src="../../Images/Screenshots/hh_vca_config_project-details_288x166.png" class="width_3" style="width: 288;height: 166;" />
+                </p>
+                <p>The information is used to categorize recorded video segments.</p>
+                <p>If you leave fields blank, that information will be missing in descriptions of recorded video segments.</p>
+                <p>After you have changed any items in the Project Details panel, click SAVE. To cancel your changes without saving, click the Home icon to return to the VIDEO DASHBOARD.</p>
+            </div>
+        </div>
+        <h2>Viewing the Overlay Panel</h2>
+        <p>The OVERLAY&#160;DETAILS panel displays images (like a company logo) and data (like the current date/time, ROV depth, and ROV heading) that can overlaid on a video stream for viewing or recording. After you create an overlay layout, you can save it for future use.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_vca_config_view-overlay_672x226.png" style="width: 672;height: 226;" />
+        </p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See details</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <p>For information on creating and editing overlay layouts, see <a href="hh1_vca_overlay.htm" class="MCXref xref"><i>Creating/Editing Video Overlays</i></a>. For information on adding an overlay to a video stream, see <a href="hh1_vca_record_about.htm" class="MCXref xref"><i>About Recording Video with the Video Computer</i></a>.</p>
+                <p>You can use buttons on the right of the overlay panel to manage overlays:</p>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Click Import to load a saved overlay layout.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Click Export to save the current overlay layout for future use.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 9px;" />
+                    <col style="width: 15px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Click Edit to go to the OVERLAY LAYOUT EDITOR.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_vca_config.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

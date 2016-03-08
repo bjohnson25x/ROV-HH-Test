@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Flight Auto Functions">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Auto Function Sensor Dependencies</title>
+        <meta name="description" content="Most auto functions require one or more sensors to perform their flight-control functions." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor43"></a>
+            <MadCap:concept term="hh_flight_auto-func_general" />Auto Function Sensor Dependencies</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_auto-func_general" href="javascript:void(0);" data-mc-topics="About Auto Functions|hh1_flight_auto-func_overview.htm#aanchor41||Assigning Auto Function On/Off on the Flight Joystick|hh1_config_tactile-ctrl_fl-jstck_auto-func.htm#aanchor294||Auto Function List and Descriptions|hh1_flight_auto-func_list-descrip.htm#aanchor42||Auto Function Sensor Dependencies|#aanchor43||Auto Function Set Points|hh1_flight_auto-func_set-point.htm#aanchor44||Locking Out Joystick Input from Auto Functions|hh1_flight_auto-func_joystk-lockout.htm#aanchor45||Selecting Sensors to Use for Flight Control|hh1_config_gen_flight-ctrl_sensor-select.htm#aanchor324"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to general information about auto functions.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_auto-func_individual" href="javascript:void(0);" data-mc-topics="AUTO ALTITUDE Auto Function|hh1_flight_auto-func_altitude.htm#aanchor46||AUTO&#160;DEPTH Auto Function|hh1_flight_auto-func_depth.htm#aanchor48||AUTO&#160;HEADING Auto Function|hh1_flight_auto-func_heading.htm#aanchor50||AUTO&#160;PITCH/ROLL Auto Function|hh1_flight_auto-func_pitch-roll.htm#aanchor52||BOTTOM&#160;MODE Auto Function|hh1_flight_auto-func_bottom-mode.htm#aanchor56||CRUISE Auto Function|hh1_flight_auto-func_cruise.htm#aanchor47||DISPLACE Auto Function|hh1_flight_auto-func_displace.htm#aanchor49||HIGH SPEED Auto Function|hh1_flight_auto-func_high-speed.htm#aanchor57||MANUAL VELOCITY Auto Function|hh1_flight_auto-func_man-velocity.htm#aanchor59||MEASURE Auto Function|hh1_flight_auto-func_measure.htm#aanchor51||PARK Auto Function|hh1_flight_auto-func_park.htm#aanchor58||REVERSE Auto Function|hh1_flight_auto-func_reverse.htm#aanchor55||STATIONKEEP Auto Function|hh1_flight_auto-func_stationkeep.htm#aanchor53||TRIMS Auto Function|hh1_flight_auto-func_trims.htm#aanchor54"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about individual auto functions.</p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Sensor quantities and types vary with each ROV system. Your system may not use all sensors listed below.</p>
+        <p>Most auto functions require one or more sensors to perform their flight-control functions. For information on how to assign a sensor for flight control, see <a href="hh1_config_gen_flight-ctrl_sensor-select.htm" class="MCXref xref"><i>Selecting Sensors to Use for Flight Control</i></a>.</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Auto Function Sensor Requirements</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" style="width: 131px;" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Mode</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">Required Sensors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>StationKeep</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: TOGS MRU plus a compass or an MRU with heading*</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">DVL: WH1200</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Cruise</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <p>None</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Displacement XY</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: TOGS MRU plus a compass or an MRU with heading*</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">DVL: WH1200</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Displacement Z</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: TOGS MRU plus a compass or an MRU with heading*</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Depth sensor or altimeter</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Trim</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <p>None</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Auto Heading</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <p>Gyro: TOGS MRU plus a compass or an MRU with heading*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Auto Depth</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: TOGS MRU plus a compass or an MRU with heading*</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Depth sensor</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Auto Altitude</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: TOGS MRU plus a compass or an MRU with heading*</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Altimeter or DVL (WH1200)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Mid-Water StationKeep</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Gyro: MiniPOS/NAV3 or Ixsea PHINS (must include a DVL)</td>
+                            </tr>
+                        </table>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">USBL</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1" colspan="2">
+                        <p colspan="2">*MRUs with heading include CDL MiniPOS2, CDL MiniPOS/NAV3, Ixsea Octans, Ixsea PHINS, CDL INSense, and CDL TOGS/NAV</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_auto-func_sensor-dependency.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

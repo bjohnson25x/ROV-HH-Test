@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Configuring General System Parameters|Setting Flight Control Parameters">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Adjusting ROV Center of Mass</title>
+        <meta name="description" content="The control system uses information about the ROV center of mass (CoM) to determine how much thrust to generate from each thruster to perform commanded movements. When you add tooling, a skid, or other heavy equipment to the ROV, the vehicle CoM can change substantially." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor320"></a>
+            <MadCap:concept term="hh_config_gen_fliight-ctrl" />Adjusting ROV Center of Mass</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_gen_fliight-ctrl" href="javascript:void(0);" data-mc-topics="About Setting Flight Control Parameters|hh1_config_gen_flight-ctrl_overview.htm#aanchor318||Adjusting ROV Center of Mass|#aanchor320||Selecting Sensors to Use for Flight Control|hh1_config_gen_flight-ctrl_sensor-select.htm#aanchor323||Setting Heading Options|hh1_config_gen_flight-ctrl_heading.htm#aanchor322||Setting Maximum Thruster Power and Displacement Speed|hh1_config_gen_flight-ctrl_max-pwr-displace.htm#aanchor321"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about setting flight control parameters.</p>
+        <p>The control system uses information about the ROV center of mass (CoM) to determine how much thrust to generate from each thruster to perform commanded movements. When you add tooling, a skid, or other heavy equipment to the ROV, the vehicle CoM can change substantially. This affects operations by changing the commanded flight line, as shown in the table below.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;caption-side: top;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Effects of Changing the ROV Center of Mass </caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">CoM Movement</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Resulting Flight Deviation</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">Screen Control To Use for Correction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+CoM moved up</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p>Pitch, when thrusting fore/aft<br />Roll, when thrusting laterally</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Up-</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">CoM moved down</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Pitch, when thrusting fore/aft<br />Roll, when thrusting laterally</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Down+</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">CoM moved to port</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Yaw, when thrusting fore/aft</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Port-</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">CoM moved to starboard</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Yaw, when thrusting fore/aft</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Starboard+</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+CoM moved aft</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Yaw, when thrusting laterally</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+Aft-</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">CoM moved forward</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">Yaw, when thrusting laterally</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">Fore+</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Use the CENTER OF MASS ADJUSTMENT panel (shown below) to change the control system CoM values to more closely match the vehicle’s current true CoM.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_gen_flight-ctrl_mass_288x145.png" class="width_3" style="width: 288;height: 145;" />
+        </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Ensure that the user profile for your control station includes supervisor permissions.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">On any CONFIGURATION screen, tap the GENERAL tab.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">On the list on the left side of the screen, tap FLIGHT CONTROL.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">In the CENTER OF MASS ADJUSTMENT panel, tap the plus or minus buttons to change the CoM as desired.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">
+After you make adjustments, fly the vehicle and note any flight deviation. Adjust the CoM as necessary until you have corrected the flight deviation.
+</td>
+            </tr>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_gen_flight-ctrl_mass.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

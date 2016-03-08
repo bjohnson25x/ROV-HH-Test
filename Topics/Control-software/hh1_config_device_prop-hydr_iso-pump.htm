@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Configuring Devices|PROPERTIES Configuration Tab|Configuring Hydraulic Device Properties">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>ISOL-8 Pump Device Configuration Properties</title>
+        <meta name="description" content="For the ISOL-8 pump, you can specify fluid type and reservoir, specify flow control, and for some ISOL-8 pump models, select the number of cylinders used for a hydraulic circuit." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor240"></a>
+            <MadCap:concept term="hh_config_device_prop-hydr" /><a name="aanchor241"></a>
+            <MadCap:concept term="hh_config_device_prop" />ISOL-8 Pump Device Configuration Properties</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device_prop-hydr" href="javascript:void(0);" data-mc-topics="8-Liter Compensator/Reservoir Configuration Properties|hh1_config_device_comp-reservoir.htm#aanchor244||ISOL-8 Pump Device Configuration Properties|#aanchor240||Schilling Valve Pack Device Configuration Properties|hh1_config_device_prop-hydr_sr-vp.htm#aanchor236||Sub-Atlantic Valve Pack  Device Configuration Properties|hh1_config_device_prop-hydr_sa-vp.htm#aanchor238"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about configuring hydraulic device properties.</p>
+        <p>The <span class="VariablesIsolation pump">ISOL-8 pump</span> is used in the UHD-III hydraulic configuration to provide hydraulic circuits for auxiliary (tooling) use.</p>
+        <p><span class="VariablesIsolation pump">ISOL-8 pump</span> configuration varies depending on the pump model. The two models are:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Eight-cylinder model, which pumps fluid for two auxiliary circuits:</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">Aux circuit 1 - uses six cylinders and has its own fluid reservoir.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet_2nd" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 28px;" />
+            <col style="width: 20px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Equals Sign">—</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="—">Aux circuit 2 - uses two cylinders and has its own fluid reservoir.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Four-cylinder model, with a single hydraulic circuit (aux circuit 1) and its own fluid reservoir.</td>
+            </tr>
+        </table>
+        <p>You must have a software license to use the eight-cylinder <span class="VariablesIsolation pump">ISOL-8 pump</span>.</p>
+        <p>To configure the ISOL-8 pump, first, display the list of installed devices.</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="17" alt="Closed" data-mc-alt2="Open" />See how</a></span>
+            <div class="MCDropDownBody dropDownBody">
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Display any CONFIGURATION  screen. (If necessary, tap CONFIGURATION on the Main Menu.)</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">Tap the DEVICES tab near the screen top.</td>
+                    </tr>
+                </table>
+                <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                    <col style="width: 0px;" />
+                    <col style="width: 24px;" />
+                    <col style="width: auto;" />
+                    <tr>
+                        <td valign="top" />
+                        <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                        </td>
+                        <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap INSTALLED DEVICES.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>Then, configure the ISOL-8 pump:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">Tap HYDRAULICS.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">When the list of hydraulic devices displays, select the ISOL-8 pump.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">Tap EDIT&#160;CONFIGURATION.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Tap the PUMP PROPERTIES tab.</td>
+            </tr>
+        </table>
+        <p class="Heading_No_Num">Device Configuration Options, 4-Cylinder Pump</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_device_edit-config_iso-4cyl_672x342.png" alt="" title="" style="width: 672;height: 342;" />
+        </p>
+        <p class="Heading_No_Num">Device Configuration Options, 8-Cylinder Pump</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_device-edit-config_iso-8cyl_672x342.png" style="width: 672;height: 342;" />
+        </p>
+        <p>If you have mechanically configured an 8-cylinder ISOL-8 pump to mix the fluids in aux circuit 1 and aux circuit 2, you should configure aux circuit 1 to use eight cylinders. When you do this, aux circuit 2 controls become unavailable.</p>
+        <p class="Heading_No_Num">Cylinder Type and Availability Configuration</p>
+        <p>Scroll down in the configuration panel to access controls for cylinder type (part number) and availability (whether any cylinders are disabled). </p>
+        <p> Disable a cylinder if:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The cylinder has been removed and a blanking plate installed in its place.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The cylinder is not functioning properly. Control system software can then compensate for the malfunctioning cylinder.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_config_device-edit-config_iso-cylinders_672x342.png" style="width: 672;height: 342;" />
+        </p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device_prop-hydr_iso-pump.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

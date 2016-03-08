@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Configuring the ROV System|Device Interfaces and Signal Types">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Device Signal Types</title>
+        <meta name="description" content="This manual section lists device signal types, node interface module types used for those signals, and possible signal processing locations." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor215"></a>
+            <MadCap:concept term="hh_config_device-interface" />Device Signal Types</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_config_device-interface" href="javascript:void(0);" data-mc-topics=" Interface Module Locations and Quantities for Devices|hh1_config_device-interface_im-locations.htm#aanchor217||Device Interface Categories|hh1_config_device-interface_categories.htm#aanchor214||Device Signal Destinations|hh1_config_device-interface_signal-destinations.htm#aanchor216||Device Signal Types|#aanchor215||Device User Interfaces and Mirroring Compared|hh1_config_device-interface_user-mirror.htm#aanchor218"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about signal processing and device interfaces.</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Interface Modules and Device Signal Types</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" style="width: 316px;" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TechPubs_Tablestyle-Head-Header1">
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Signal Type Transmitted by Device</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Interface Module Type</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadE-Column1-Header1">Possible Signal Processing Locations*</th>
+                    <th class="TableStyle-TechPubs_Tablestyle-HeadD-Column1-Header1">Mirrored Signal OK?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p rowspan="3"><b>Serial </b>(RS-232 or RS-485)</p>
+                        <p rowspan="3">Examples: manipulators, thruster control units, DVLs, compensator feedback, altimeters, compasses, gyros, depth sensors, pan and tilt actuators, camera focus/zoom controls
+.</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1"><b>SIM </b>(serial interface module)</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">ROV control system (RTC)</td>
+                            </tr>
+                        </table>
+                        <p>or</p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">User's processing equipment</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">Yes</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <p rowspan="2"><b>Video, TAVS</b>
+                        </p>
+                        <p rowspan="2">For all cameras used in TAVS. PAL or NTSC, digital or analog. VIM modules can also transmit serial signals (for camera zoom and/or focus control).</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1"><b>VIM </b>(video interface module)</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">ROV control system (RTC)</td>
+                            </tr>
+                        </table>
+                        <p>or</p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">User's processing equipment</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">No</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1"><b>Video, HDEVS</b>
+                        <p rowspan="2"> For subsea SD cameras used in HDEVS. PAL or NTSC.</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1"><b>SDVIM</b> (SD video interface module)</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Subsea conversion of video signals to Ethernet signals performed by the SDVIM</td>
+                            </tr>
+                        </table>
+                        <p>and</p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Topside conversion of Ethernet signals to video signals performed by decoders</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">No</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">
+                        <p rowspan="2"><b>Ethernet</b>
+                        </p>
+                        <p rowspan="2">Example: Some multibeam sonar devices,  Schilling HD camera, Schilling valve packs (8-ST, 9-ST, and 12-ST), ISOL-8 pump.</p>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1"><b>NIM </b>(network interface module)</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">ROV control system (RTC)</td>
+                            </tr>
+                        </table>
+                        <p>or</p>
+                        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                            <col style="width: 9px;" />
+                            <col style="width: 15px;" />
+                            <col style="width: auto;" />
+                            <tr>
+                                <td valign="top" />
+                                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                                </td>
+                                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">User's processing equipment</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">No</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*See <a href="hh1_config_device-interface_signal-destinations.htm" class="MCXref xref"><i>Device Signal Destinations</i></a> for definitions.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>The control system cannot check to ensure that you have connected a device to a compatible interface module on a node port. (For example, the control system does not detect the connection of a device that sends serial signals to a port with a video interface module.) If you do not accurately match port hardware with the configuration information about that hardware, equipment may malfunction.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_config_device-interface_signal-types.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

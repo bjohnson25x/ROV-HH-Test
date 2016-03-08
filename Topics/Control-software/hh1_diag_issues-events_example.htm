@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Diagnostics|Issues and Events">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Example of Issue/Event Sequence</title>
+        <link href="../../Resources/TableStyles/TechPubs_Tablestyle.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <meta name="description" content="This manual section gives an example of actions that might occur when an issue is raised and then resolved." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor355"></a>
+            <MadCap:concept term="hh_diag_issues-events" />Example of Issue/Event Sequence</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_diag_issues-events" href="javascript:void(0);" data-mc-topics="About Issues and Events|hh1_diag_issues-events_overview.htm#aanchor349||Example of Issue/Event Sequence|#aanchor355||Issue Clearing (Returning to Normal Conditions)|hh1_diag_issues-events_issue-clear.htm#aanchor354||Issue Notification Methods|hh1_diag_issues-events_issue-notif.htm#aanchor353||Issue Types|hh1_diag_issues-events_issue-type.htm#aanchor351||Status Bar System Issues List|hh1_diag_issues-events_status-bar.htm#aanchor352||Telling the Control System to Ignore Issues|hh1_diag_issues-events_issue-ignore.htm#aanchor356||Viewing System Issues—Status Bar|hh1_controls_touch-scrn_status-bar_issues.htm#aanchor11"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about issues and events.</p>
+        <p>If the HPU motor temperature rises above the normal range during vigorous operation, the following sequence of actions might occur:</p>
+        <table style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: auto;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (continued)';mc-table-style: url('../../Resources/TableStyles/TechPubs_Tablestyle.css');" class="TableStyle-TechPubs_Tablestyle" cellspacing="0">
+            <caption>Example Sequence for Issue Resolution</caption>
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" style="width: 2.01in;" />
+            <col class="TableStyle-TechPubs_Tablestyle-Column-Column1" style="width: 532px;" />
+            <tbody>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">HPU motor temperature rises above normal.</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">
+                        <p>An issue is generated; it displays in the Active Issues log and as a new issue in the Status Bar issues list.</p>
+                        <p>An event is posted in the event log indicating that an HPU motor temperature issue has been generated.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyE-Column1-Body1">Operator sees the new issue and acknowledges the issue.</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyD-Column1-Body1">When you acknowledge the issue, it is no longer a new issue. An event is posted to the Event log indicating that the issue has been acknowledged. The issue remains an active issue as long as the motor temperature is above normal.</td>
+                </tr>
+                <tr class="TableStyle-TechPubs_Tablestyle-Body-Body1">
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyB-Column1-Body1">Thruster use drops, and HPU motor temperature drops back into the normal range.</td>
+                    <td class="TableStyle-TechPubs_Tablestyle-BodyA-Column1-Body1">An event is posted in the Event log indicating that HPU temperature is within normal range. Since the issue was previously acknowledged, the issue is automatically cleared from the Active Issues log and from the issues lists on the Status bar and the DIAGNOSTICS dashboard.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_diag_issues-events_example.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

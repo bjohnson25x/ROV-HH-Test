@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Diagnostics|Telemetry Diagnostic Details">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Communication Network Structure</title>
+        <meta name="description" content="The Digital Telemetry System (DTS) maximizes the quality and reliability of communications by using redundant fiber optic cables to connect the rack nodes and subsea nodes. The DTS also uses rapid spanning tree protocol (RSTP) in the node firmware." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor429"></a>
+            <MadCap:concept term="hh_diag_telem_subsys" />Communication Network Structure</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_diag_telem_subsys" href="javascript:void(0);" data-mc-topics="About Telemetry Diagnostics Details|hh1_diag_telem_details_overview.htm#aanchor428||Communication Network Structure|#aanchor429||Communication Path Status|hh1_diag_telem_comms-path.htm#aanchor431||Light Levels and Ethernet Traffic|hh1_diag_telem_light-level-ethernet.htm#aanchor433||Node Diagnostics|hh1_diag_telem_node-diag.htm#aanchor434||Operator Intervention in Communication Paths|hh1_diag_telem_comms-path_intervention.htm#aanchor432||Telemetry Overview Screen|hh1_diag_telem_overview-scrn.htm#aanchor430"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about telemetry diagnostics.</p>
+        <p>The Digital Telemetry System (DTS) maximizes the quality and reliability of communications by:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Using two fiber optic cables to connect the rack nodes and subsea nodes.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Implementing rapid spanning tree protocol (RSTP) in the node firmware.</td>
+            </tr>
+        </table>
+        <p>Dual fibers provide redundancy to network communication paths. Using RSTP, a node can evaluate fiber paths 1 and 2 for:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The presence of a signal</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The fewest pass-through connections to the rack node</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Recent availability</td>
+            </tr>
+        </table>
+        <p>Example of DTS communications using two fiber optic cables for redundancy:</p>
+        <p class="Figure_Image" style="text-align: center;">
+            <img src="../../Images/Illustrations-and-Photos/hh_diag_telemetry_rstp-chain.svg" class="width_4" />
+        </p>
+        <p>The node can then direct its communications to the best path. The node also disables communications on the other path to eliminate duplicate data traffic to the RTC.</p>
+        <p>If a fiber cable or an internal node component becomes damaged or nonfunctional during operations, the dual fibers and RSTP technology allow the other nodes to reroute their fiber paths within seconds to maintain communications with the rack node(s), ensuring continued system operation.</p>
+        <p>For details about RSTP (including instructions for resetting RSTP data or turning RSTP off), see the section on RSTP in <span style="font-style: italic;" class="VariablesVol 2 Power, Telem &amp; Comp">Power, Telemetry, &amp; Compensation Systems</span>.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_diag_telem_comms-network.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

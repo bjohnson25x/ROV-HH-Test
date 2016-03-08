@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Controlling the ROV and TMS|Hydraulic Circuit Operation and Control">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Viewing and Overriding HPU Shutdown Limits</title>
+        <meta name="description" content="The control system automatically turns off electrical power to the HPU motor if a defined safety limit has been exceeded. Under some conditions, you may want to override the shutdown to continue operations." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor97"></a>
+            <MadCap:concept term="hh_flight_hpu">
+            </MadCap:concept>Viewing and Overriding HPU Shutdown Limits</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_flight_hpu" href="javascript:void(0);" data-mc-topics="About FLIGHT Screen Hydraulic Circuit Control|hh1_flight_hpu_overview.htm#aanchor96||About the ROV Hydraulics Subsystem Diagnostics Display|hh1_diag_rov_hydraul_subsys_overview.htm#aanchor386||Automatic HPU Motor Shutdown, Power Management, and Pressure Limiting|hh1_flight_hpu_auto-limits.htm#aanchor102||HPU Calibration Requirements|hh1_flight_hpu_calib-requirement.htm#aanchor103||Priming an Auxiliary Hydraulic Circuit (UHD-III Only)|hh1_flight_hpu_isopump-prime.htm#aanchor101||Setting Hydraulic Circuit Flow (UHD-III  Only)|hh1_flight_hpu_set-flow.htm#aanchor100||Setting Hydraulic Circuit Pressures|hh1_flight_hpu_set-pressure.htm#aanchor99||TMS Hydraulics Subsystem Diagnostics Display (UHD-II Only)|hh1_diag_tms_hydraul_subsys_overview.htm#aanchor412||Turning HPU Power On and Off|hh1_flight_hpu_power-on-off.htm#aanchor98||Viewing and Overriding HPU Shutdown Limits|#aanchor97"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a> for links to information about operating and controlling hydraulic circuits.</p>
+        <p class="Note_Caution" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Caution!&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Caution!</span></b> &#160;</span></span>Overriding system safety limits may cause serious damage to the HPU. </p>
+        <p>The control system automatically turns off electrical power to the HPU motor if any of the following safety limits are exceeded:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Motor temperature is greater than 80 °C (176 °F).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Oil temperature is greater than 80 °C (176 °F).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Oil volume is less than 0.44 liters (0.12 gal) for HD and UHD-III; less than 0.55 liters (0.15 gal) for UHD-II.</td>
+            </tr>
+        </table>
+        <p>On each graph in the expanded HYDRAULIC PRESSURE CONTROL panel, the automatic shutdown level is displayed as a red bar.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_hpu_uhd3_auto-shutdown_672x463.png" alt="" title="" style="width: 672;height: 463;" />
+        </p>
+        <p>You can override the automatic HPU shutdown if:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You know that the shutdown was caused by a faulty HPU sensor that is reporting inaccurate information.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You must continue emergency operation of the HPU even though a legitimate automatic shutdown has occurred.</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>You must be operating with supervisor permissions to override an automatic HPU shutdown.</p>
+        <p>To override an automatic HPU shutdown, tap the OVERRIDE button located below the graph that shows the over-limit reading. Then drag the arrow to the unlock icon to perform the override. The override allows the HPU to be restarted for emergency full-pressure operation.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_flight_hpu_override.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

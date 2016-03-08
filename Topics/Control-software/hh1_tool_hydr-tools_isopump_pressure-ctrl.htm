@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Using Hydraulic Tools|Controlling Hydraulic Tools (Including Manipulators)|Operating Tools with the ISOL-8 Pump">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>ISOL-8 Pump Tool Operation in Pressure-Control Mode</title>
+        <meta name="description" content="If you are using the ISOL-8 pump to operate a subsea tool that is configured for operation using pressure control (where tool force is more important than tool speed), use the pressure-control operation mode." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="ISOL-8"></a><a name="aanchor148"></a>
+            <MadCap:concept term="hh_tool_isopump-ops" />ISOL-8 Pump Tool Operation in Pressure-Control Mode</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_tool_isopump-ops" href="javascript:void(0);" data-mc-topics="About BOP (Blowout Preventer) Intervention|hh1_tool_hydr-tools_bop-overview.htm#aanchor153||About Operating Tools with the ISOL-8 Pump|hh1_tool_hydr-tools_isopump_overview.htm#aanchor147||ISOL-8 Pump Tool Operation in Flow-Control Mode|hh1_tool_hydr-tools_isopump_flow-ctrl.htm#aanchor149||ISOL-8 Pump Tool Operation in Pressure-Control Mode|#aanchor148||Optimizing the ISOL-8 Pump for Tool Operation|hh1_tool_hydr-tools_isopump_optimizing.htm#aanchor150"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about using the ISOL-8 pump to operate hydraulic tools.</p>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_tool_hydr" href="javascript:void(0);" data-mc-topics="About BOP (Blowout Preventer) Intervention|hh1_tool_hydr-tools_bop-overview.htm#aanchor151||About Controlling Hydraulic Tools|hh1_tool_hydr-tools_overview.htm#aanchor142||About Operating Tools with the ISOL-8 Pump|hh1_tool_hydr-tools_isopump_overview.htm#aanchor146||Adding and Deleting a Hydraulic Tooling Package|hh1_tool_add-del.htm#aanchor143||Hydraulics for Position-Controlled Manipulators|hh1_tool_hydr-tools_manip-pos.htm#aanchor145||Hydraulics for Rate-Controlled Manipulators|hh1_tool_hydr-tools_manip-rate.htm#aanchor144"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about tool hydraulics.</p>
+        <p>Most subsea tools are configured for operation using pressure control, where tool force is more important than tool speed. Follow the instructions in this section to use the ISOL-8 pump in pressure-control mode to operate a typical hydraulic tool. </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>Extended operation of a hydraulic tool or operation at pressures above 207 bars (3000 psi)  causes heat buildup that can degrade performance and/or damage equipment.</p>
+        <p>The instructions in this section assume that:</p>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The ROV HPU motor is running.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The ROV&#160;HPU main circuit is ready for operation.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">Any valve pack that will be used in the tool’s operation has power and is ready for use.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">If the ISOL-8 pump has two circuits, you are using Aux circuit 2 for tool operation. (If you are using Aux circuit 1, adjust instructions as necessary.)</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You have configured Aux circuit 2 to allow flow control (see <a href="hh1_config_device_prop-hydr_iso-pump.htm" class="MCXref xref"><i>ISOL-8 Pump Device Configuration Properties</i></a>).</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">You have primed the ISOL-8 pump.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Bullet" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 9px;" />
+            <col style="width: 15px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="bullet">●</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="●">The ISOL-8 pump Aux circuit 2 is not currently enabled.</td>
+            </tr>
+        </table>
+        <p>To operate a tool:</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">1.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="1.">On the FLIGHT screen, tap HPU.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">2.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="2.">When the HYDRAULIC PRESSURE CONTROL panel displays, tap the ROV&#160;MAIN tab.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_hpu-iso_main_iso-steps_672x350.png" alt="" title="" style="width: 672;height: 350;" />
+        </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">3.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="3.">On the PRESSURE gauge, drag the slider to change the ROV HPU pressure setting to 207 bars (3000 psi), which is the standard value for high-pressure operations. This pressure will provide sufficient power to operate most tools.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">4.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="4.">Tap the CIRCUIT&#160;2 tab.</td>
+            </tr>
+        </table>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_flight_hpu_uhd3_std_circuit1_672x369.png" alt="" title="" style="width: 672;height: 369;" />
+        </p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">5.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="5.">Tap ENABLE to enable circuit operation.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">6.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="6.">Look at the feedback values on the PRESSURE and FLOW gauges. If these values are approximately zero, continue with the next numbered step. However, because ISOL-8 pump pistons move to their “ready” positions when you enable pump operation, these values may show some flow and pressure. If this is the case, continue with the next lettered step.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>a.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="a.">If the ISOL-8 pump has a standard hydraulic circuit setup that includes Cardev filters, pressure will bleed off. Flow should also stop after the pistons have moved to their ready position. Wait until both the pressure and flow feedback values are approximately zero, and then continue with the next numbered step.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Letter_step_a" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 24px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span>b.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="b.">If the ISOL-8 pump has a nonstandard hydraulic configuration that does not include Cardev filters, the pressure feedback value can be high (even higher than 3000 psi). To lower the pressure, move the PRESSURE and FLOW sliders upward to briefly operate the tool until the pressure feedback value is approximately zero. After the pump pistons stop moving, the flow feedback value should also be approximately zero. Return the PRESSURE and FLOW sliders to zero, and then continue with the next numbered step.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">7.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="7.">On the ISOL-8 pump circuit FLOW gauge, slowly drag the slider upward to raise the flow setting. Because the PRESSURE gauge setting of zero prevents the pump from operating, the flow feedback value should remain approximately zero. As you drag the FLOW slider, also watch the pressure feedback value and verify that the pressure does not change (that is, it remains approximately zero).</td>
+            </tr>
+        </table>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span> A changing pressure feedback value indicates a problem; if the value does change, return the FLOW gauge slider to zero and diagnose the problem.</p>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">8.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="8.">Continue to drag the FLOW slider until it is at its maximum value. (You cannot configure this maximum value). The flow feedback value should remain approximately zero.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Body_Num_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 24px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Bullet" valign="top"><span class="Bold">9.</span>
+                </td>
+                <td class="AutoNumber_p_Bullet" valign="top" data-mc-autonum="9.">Use the ISOL-8 pump circuit to operate the tool in the same way that you would use a typical pressure-controlled HPU—by raising the ISOL-8 circuit pressure setting to the desired value. As you raise the PRESSURE slider, the pressure feedback value should gradually rise until it reaches a value near the pressure setting.</td>
+            </tr>
+        </table>
+        <p> If the load on the ISOL-8 pump circuit exceeds the circuit’s capacity, the pressure feedback value will begin to lag behind the pressure setting. See  <a href="hh1_tool_hydr-tools_isopump_optimizing.htm#Optimizi" class="MCXref xref"><i>Optimizing the ISOL-8 Pump for Tool Operation</i></a> for information on how to proceed.</p>
+        <p>Typically, most of the load on the ISOL-8 pump comes from the tool being operated, but the load can also include flow through other items on the ISOL-8 pump circuit or on the ROV&#160;HPU main circuit. Examples of these other items include thrusters, Cardev filters, and valve packs.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_tool_hydr-tools_isopump_pressure-ctrl.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>

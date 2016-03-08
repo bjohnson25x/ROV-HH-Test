@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Hammerhead Manual Digital.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Diagnostics|Telemetry Diagnostic Details">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Light Levels and Ethernet Traffic</title>
+        <meta name="description" content="The diagnostic screen for light levels and Ethernet traffic shows status information and current and historical light levels. You can access path management tools and set the alarm threshold for low light levels." />
+        <link href="../../Resources/Stylesheets/TechPubs.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="aanchor433"></a>
+            <MadCap:concept term="hh_diag_telem_subsys" />Light Levels and Ethernet Traffic</h1>
+        <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="hh_diag_telem_subsys" href="javascript:void(0);" data-mc-topics="About Telemetry Diagnostics Details|hh1_diag_telem_details_overview.htm#aanchor428||Communication Network Structure|hh1_diag_telem_comms-network.htm#aanchor429||Communication Path Status|hh1_diag_telem_comms-path.htm#aanchor431||Light Levels and Ethernet Traffic|#aanchor433||Node Diagnostics|hh1_diag_telem_node-diag.htm#aanchor434||Operator Intervention in Communication Paths|hh1_diag_telem_comms-path_intervention.htm#aanchor432||Telemetry Overview Screen|hh1_diag_telem_overview-scrn.htm#aanchor430"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />See Also</span></a>&#160;for links to information about telemetry diagnostics.</p>
+        <p>Select a telemetry subsystem (like the ROV or TMS) to display the screen showing light levels and Ethernet traffic.</p>
+        <p class="Figure_Image">
+            <img src="../../Images/Screenshots/hh_diag_telem_rov_connect-details_672x687.png" style="width: 672;height: 687;" />
+        </p>
+        <p class="Note_General" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #9d0c4f;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&lt;/span&gt;&lt;/b&gt; &#160;"><span class="autonumber"><span><b><span style="color: #9d0c4f;" class="mcFormatColor">Note:</span></b> &#160;</span></span>For Ethernet traffic levels, values shown on the gauges and text fields are relative and not in absolute units (like mBps).</p>
+        <p>Each node has two SFP modules. Each module transmits data on one of two wavelengths and receives data on the other wavelength. SFP modules with a blue label transmit on 1310 nm and receive on 1550 nm, while SFP modules with a green label transmit on 1550 nm and receive on 1310 nm. Each node has one of each type of module.</p>
+        <p>When you make fiber connections between nodes, the blue module (designated module A) of one node must be connected to the green module (designated module B) of another node, and vice versa. If two nodes are connected using modules of the same color, they will not communicate.</p>
+        <p>In the Digital Telemetry System, a node’s blue SFP module connects to the next node upstream in network (toward the surface). A node’s green SFP module connects to the next node downstream in the network (toward the seafloor).</p>
+        <p>The default alarm threshold for low light level is -28 dBM. Setting the pointer to less than -30 disables the alarm.</p>
+        <p>In the CONNECTION&#160;DETAILS screen, “time until recovery” is the time remaining before a path that experienced a failure is considered to be sound again.</p>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkBottom"><a href="../../Hammerhead Manual Digital.htm#Topics/Control-software/hh1_diag_telem_light-level-ethernet.htm">Open topic with navigation</a>
+        </p>
+    </body>
+</html>
